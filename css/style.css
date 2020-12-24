@@ -1,5 +1,5 @@
 * {
-	font-family: 'Raleway', monospace !important;
+    font-family: 'Raleway', monospace !important;
 }
 
 html{
@@ -29,8 +29,11 @@ h1 {
     border-radius: 50%;
 }
 
-.intro {
+section {
     animation: 1s ease-out 0s 1 fadeUp;
+}
+
+.intro {
     padding: 20px;
     background: #fff;
 }
@@ -51,4 +54,57 @@ h1 {
 
 .copyright {
     text-align: center
+}
+
+.skill {
+    background: rgba(15,18,23,0.4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 300%;
+    white-space: nowrap;
+}
+
+.skills {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    background: rgba(27, 254, 198, 0.786);
+}
+
+.section-title h1 {
+    color: rgb(15,18,23);
+}
+
+.project-grid {
+    padding: 20px;
+}
+
+.project-grid .card-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.skill-small {
+    background: rgba(15,18,23,0.4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 300%;
+    white-space: nowrap;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    text-align: justify;
 }

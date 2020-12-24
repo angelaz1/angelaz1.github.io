@@ -1,0 +1,26 @@
+{
+    "cards": [
+        {
+            "title": "M.E.M.E.",
+            "date": "Summer 2020",
+            "description": "A collaborative music project done with Microsoft Interns and FTEs",
+            "thumbnail": "assets/img/meme.png",
+            "longDescription": "M.E.M.E. (standing for Microsoft Engineers Music Ensemble) was a summer project conducted with ~40 Microsoft interns and full-time employees. The project consisted of arranging, recording, and editing songs for two virtual performances over the course of a summer internship.",
+            "link": "https://www.youtube.com/channel/UCX34Zz2V_xXmLCqeu_97W_A",
+            "linkPretext": "You can find all of our performances ",
+            "linkText": "here",
+            "linkPosttext": "!",
+            "images": [
+                {"path": "assets/img/meme.png"},
+                {"path": "assets/img/meme.png"}
+            ], 
+            "skills": [
+                {"name": "Video Editing"},
+                {"name": "Music Arrangement"},
+                {"name": "Piano"},
+                {"name": "Flute"},
+                {"name": "Fun!"}
+            ]
+        }
+    ]
+}

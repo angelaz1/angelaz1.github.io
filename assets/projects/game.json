@@ -1,0 +1,27 @@
+{
+    "cards": [
+        {
+            "title": "Perspective",
+            "date": "Summer 2017",
+            "description": "An HTC Vive game based on anamorphic art",
+            "thumbnail": "assets/img/meme.png",
+            "longDescription": "Perspective is a VR game created for the HTC Vive that focuses on the theme of anamorphic illusions. This was built with an interdisciplinary team of 5 over the course of two weeks. My main roles in this project were designing the puzzles and creating the 3D/2D art assets, along with supporting the programmers.",
+            "link": "https://www.youtube.com/channel/UCX34Zz2V_xXmLCqeu_97W_A",
+            "linkPretext": "You can find a recording of the gameplay ",
+            "linkText": "here",
+            "linkPosttext": "!",
+            "images": [
+                {"path": "assets/img/meme.png"},
+                {"path": "assets/img/meme.png"}
+            ], 
+            "skills": [
+                {"name": "Unity"},
+                {"name": "C#"},
+                {"name": "Autodesk Mayan"},
+                {"name": "3D Modeling"},
+                {"name": "Photoshop"},
+                {"name": "2D Art"}
+            ]
+        }
+    ]
+}
