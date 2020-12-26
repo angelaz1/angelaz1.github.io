@@ -151,41 +151,53 @@
                 </div>
             </div>
 
-            
-            <!-- Software Projects -->
-            <section id="projects-software">
-                <div class="card subsection-title">
-                    <div class="card-body">
-                        <h3>Software Projects</h3>
+            <div id="accordion">
+                <!-- Software Projects -->
+                <div class="card">
+                    <div class="card-header" id="projects-software">
+                        <h3 class="m-3">
+                            Software Projects
+                            <a href="#" class="stretched-link" data-toggle="collapse" data-target="#softwareProjects"></a>
+                        </h3>
+                    </div>
+                    <div id="softwareProjects" class="collapse show project" aria-labelledby="softwareProjects" data-parent="#accordion">
+                        <div id="software-projects"></div>
                     </div>
                 </div>
-                <div id="software-projects" class="card-columns project-grid"></div>
-            </section>
 
-            <!-- Game Projects -->
-            <section id="projects-game">
-                <div class="card subsection-title">
-                    <div class="card-body">
-                        <h3>Game Projects</h3>
+                <!-- Game Projects -->
+                <div class="card">
+                    <div class="card-header" id="projects-game">
+                        <h3 class="m-3">
+                            Game Projects
+                            <a href="#" class="stretched-link" data-toggle="collapse" data-target="#gameProjects"></a>
+                        </h3>
+                    </div>
+                    <div id="gameProjects" class="collapse project" aria-labelledby="gameProjects" data-parent="#accordion">
+                        <div id="game-projects"></div>
                     </div>
                 </div>
-                <div id="game-projects" class="card-columns project-grid"></div>
-            </section>
-
-            <!-- Miscellaneous Projects -->
-            <section id="projects-misc">
-                <div class="card subsection-title">
-                    <div class="card-body">
-                        <h3>Other Projects</h3>
+                
+                <!-- Other Projects -->
+                <div class="card">
+                    <div class="card-header" id="projects-misc">
+                        <h3 class="m-3">
+                            Other Projects
+                            <a href="#" class="stretched-link" data-toggle="collapse" data-target="#otherProjects"></a>
+                        </h3>
+                    </div>
+                    <div id="otherProjects" class="collapse project" aria-labelledby="otherProjects" data-parent="#accordion">
+                        <div id="other-projects"></div>
                     </div>
                 </div>
-                <div id="other-projects" class="card-columns project-grid"></div>
-            </section>
+            </div>
         </section>
 
         <script id="project-card-template" type="text/template">
+            <div class="row justify-content-center mb-2 project-grid">
             {{#cards}}
-            <div class="card" style="width: 25rem;">
+            <div class="col-auto mb-3">
+            <div class="card d-flex h-100" style="width: 25rem;">
                 <div class="card-body">
                     <h3 class="card-title">{{title}}</h3>
                     <h5>{{date}}</h5>
@@ -248,7 +260,9 @@
                     </div>
                 </div>
             </div>
+        </div>
             {{/cards}}
+        </div>
         </script>
 
         <footer>

@@ -26,7 +26,7 @@
         {
             "title": "The Olympians",
             "date": "Spring 2020",
-            "description": "A WebGL Olympian dating simulator",
+            "description": "A WebGL Olympian dating simulator game",
             "thumbnail": "assets/img/olympians/aphrodite.png",
             "longDescription": "The Olympians was a final project for the 53-471 GDPP course. This project involved coming up with creative game ideas related to fable, myths, or folklore, and pitching them to the course instructors, who selected the idea that we developed into a full game. This was our first time working on a dating simulator, and we learned a lot about UI design, story-telling, and time management.\n\n This game was built with an interdisciplinary team of 5 over the course of four weeks. For this project, I was the lead programmer, UI artist, and sound designer.",
             "link": "https://moontwist11.itch.io/the-olympians",

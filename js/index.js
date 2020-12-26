@@ -1,12 +1,14 @@
+const SCROLL_UP_THRESHOLD = 5;
+const SCROLL_DOWN_THRESHOLD = 20;
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
   // Hide navbar if scroll too far down; show upon scrolling up
-  if (currentScrollPos > prevScrollpos + 20) {
+  if (currentScrollPos > prevScrollpos + SCROLL_DOWN_THRESHOLD) {
     document.getElementById("navbar").style.top = "-500px";
-  } else if (prevScrollpos > currentScrollPos + 5) {
+  } else if (prevScrollpos > currentScrollPos + SCROLL_UP_THRESHOLD) {
     document.getElementById("navbar").style.top = "0";
   }
 
@@ -34,3 +36,26 @@ function parseProjects(filePath, projectId) {
 parseProjects("./assets/projects/software.json", "software-projects");
 parseProjects("./assets/projects/game.json", "game-projects");
 parseProjects("./assets/projects/other.json", "other-projects");
+
+// Perform scrolling animation when projects accordian is toggled
+$('.collapse.project').on('show.bs.collapse', function(e) {
+  var $card = $(this).closest('.card');
+  var $open = $($(this).data('parent')).find('.collapse.show');
+
+  var additionalOffset = 0;
+
+  if($card.prevAll().filter($open.closest('.card')).length !== 0)
+  {
+    additionalOffset = $open.height();
+  }
+
+  var newTop = $card.offset().top - additionalOffset;
+  if (newTop + SCROLL_UP_THRESHOLD < window.pageYOffset) {
+    // Move accordian header to be below the navbar
+    newTop -= 50;
+  }
+
+  $('html,body').animate({
+    scrollTop: newTop
+  }, 500);
+});

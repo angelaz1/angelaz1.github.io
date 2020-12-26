@@ -3,20 +3,75 @@
         {
             "title": "C0 VSCode Extension",
             "date": "Winter 2019",
-            "description": "A VSCode Extension made for the CS course 15-122",
-            "thumbnail": "assets/img/vscode-extension/snippet.png",
+            "description": "A VSCode Extension made for 15-122",
+            "thumbnail": "assets/img/vscode-extension/extension-page.png",
             "longDescription": "As part of transitioning the 15-122 course to supporting the modern text editor VSCode, a group of TAs worked together to create an extension that enabled autocompletion, syntax highlighting, static type-checking, and more. This helped hundreds of students each semester with learning and coding in the new language C0.",
             "link": "https://marketplace.visualstudio.com/items?itemName=15122staff.c0-lsp",
             "linkPretext": "Link to extension: ",
             "linkText": "here",
             "images": [
-                {"path": "assets/img/vscode-extension/extension-page.png"},
                 {"path": "assets/img/vscode-extension/factorial.png"},
                 {"path": "assets/img/vscode-extension/autocomplete.png"}
             ], 
             "skills": [
                 {"name": "TypeScript"},
                 {"name": "VSCode"}
+            ]
+        },
+        {
+            "title": "Office Hours Queue",
+            "date": "Winter 2020",
+            "description": "Adding features to the 15-122 OH queue",
+            "thumbnail": "assets/img/vscode-extension/extension-page.png",
+            "longDescription": "This project was done in collaboration with other TAs to add features onto the current 15-122 queue, both in making some general quality-of-life improvements along with addressing some issues with remote office hours. This also had the overarching goal of getting TAs more directly involved with improving the course.",
+            "link": "https://github.com/angelaz1/122queue",
+            "linkPretext": "Link to repository: ",
+            "linkText": "here",
+            "images": [
+                {"path": "assets/img/vscode-extension/factorial.png"},
+                {"path": "assets/img/vscode-extension/autocomplete.png"}
+            ], 
+            "skills": [
+                {"name": "Node.js"},
+                {"name": "MySQL"},
+                {"name": "HTML"},
+                {"name": "CSS"}
+            ]
+        },
+        {
+            "title": "PlayFab",
+            "date": "Summer 2020",
+            "description": "Internship project with Microsoft",
+            "thumbnail": "assets/img/vscode-extension/extension-page.png",
+            "longDescription": "Placeholder Text",
+            "link": "https://github.com/angelaz1/122queue",
+            "linkPretext": "Link to repository: ",
+            "linkText": "here",
+            "images": [
+                {"path": "assets/img/vscode-extension/factorial.png"},
+                {"path": "assets/img/vscode-extension/autocomplete.png"}
+            ], 
+            "skills": [
+                {"name": "Node.js"},
+                {"name": "MySQL"},
+                {"name": "HTML"},
+                {"name": "CSS"}
+            ]
+        },
+        {
+            "title": "Pebbles OS Kernel",
+            "date": "Fall 2020",
+            "description": "Course project of 15-410",
+            "thumbnail": "assets/img/vscode-extension/extension-page.png",
+            "longDescription": "Placeholder Text",
+            "images": [
+                {"path": "assets/img/vscode-extension/factorial.png"},
+                {"path": "assets/img/vscode-extension/autocomplete.png"}
+            ], 
+            "skills": [
+                {"name": "Academic"},
+                {"name": "Operating Systems"},
+                {"name": "C"}
             ]
         }
     ]

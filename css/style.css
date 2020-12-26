@@ -6,6 +6,12 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body {
+    padding-top: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @keyframes fadeUp {
     0% {
       transform: translateY(10%);
@@ -17,8 +23,48 @@ html{
     }
 }
 
+section {
+    animation: 1s ease-out 0s 1 fadeUp;
+}
+
+.section-title {
+    text-align: center;
+    background: rgba(27, 254, 198, 0.786);
+}
+
+.section-title h1 {
+    color: rgb(15,18,23);
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.4s; /* Transition effect when sliding down (and up) */
+    z-index: 100;
+}
+
 h1 {
     color: blue;
+}
+
+.intro {
+    padding: 20px;
+    background: #fff;
+}
+
+.ion {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.about {
+    padding: 20px;
+    background: #fff;
 }
 
 @media (max-width: 700px) {
@@ -31,38 +77,6 @@ h1 {
         column-count: 2;
     }
 }
-
-.ion {
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-section {
-    animation: 1s ease-out 0s 1 fadeUp;
-}
-
-.intro {
-    padding: 20px;
-    background: #fff;
-}
-
-.about {
-    padding: 20px;
-    background: #fff;
-}
-
-#navbar {
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    transition: top 0.4s; /* Transition effect when sliding down (and up) */
-    z-index: 100;
-}
-
 
 .skill {
     background: rgba(15,18,23,0.4);
@@ -80,15 +94,6 @@ section {
     text-align: center;
 }
 
-.section-title {
-    text-align: center;
-    background: rgba(27, 254, 198, 0.786);
-}
-
-.section-title h1 {
-    color: rgb(15,18,23);
-}
-
 .project-grid {
     padding: 20px;
 }
@@ -96,6 +101,7 @@ section {
 .project-grid .card-title {
     font-weight: bold;
     text-decoration: underline;
+    display: inline-block;
 }
 
 .skill-small {
