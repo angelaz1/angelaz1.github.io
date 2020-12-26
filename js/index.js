@@ -1,5 +1,6 @@
 const SCROLL_UP_THRESHOLD = 5;
 const SCROLL_DOWN_THRESHOLD = 20;
+var showingNavbar = true;
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
@@ -8,8 +9,10 @@ window.onscroll = function() {
   // Hide navbar if scroll too far down; show upon scrolling up
   if (currentScrollPos > prevScrollpos + SCROLL_DOWN_THRESHOLD) {
     document.getElementById("navbar").style.top = "-500px";
+    showingNavbar = false;
   } else if (prevScrollpos > currentScrollPos + SCROLL_UP_THRESHOLD) {
     document.getElementById("navbar").style.top = "0";
+    showingNavbar = true;
   }
 
   prevScrollpos = currentScrollPos;
@@ -50,7 +53,7 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
   }
 
   var newTop = $card.offset().top - additionalOffset;
-  if (newTop + SCROLL_UP_THRESHOLD < window.pageYOffset) {
+  if (newTop + SCROLL_UP_THRESHOLD < window.pageYOffset || showingNavbar) {
     // Move accordian header to be below the navbar
     newTop -= 50;
   }
