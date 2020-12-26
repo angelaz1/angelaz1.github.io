@@ -3,16 +3,16 @@
         {
             "title": "Perspective",
             "date": "Summer 2017",
-            "description": "An HTC Vive game based on anamorphic art",
-            "thumbnail": "assets/img/meme.png",
-            "longDescription": "Perspective is a VR game created for the HTC Vive that focuses on the theme of anamorphic illusions. This was built with an interdisciplinary team of 5 over the course of two weeks. My main roles in this project were designing the puzzles and creating the 3D/2D art assets, along with supporting the programmers.",
-            "link": "https://www.youtube.com/channel/UCX34Zz2V_xXmLCqeu_97W_A",
+            "description": "An HTC Vive game based on anamorphic illusions",
+            "thumbnail": "assets/img/perspective/key.png",
+            "longDescription": "Perspective is a VR game created for the HTC Vive that focuses on the theme of anamorphic illusions, an interesting art form where objects could be seen depending on the viewer's perspective. One mainstream example of this is OK Go's \"The Writing's On the Wall\" music video. We chose this theme for our game in order to fully utilize the HTC Vive's capabilities of capturing the player's position and orientation.\n\n This game was built with an interdisciplinary team of 5 over the course of two weeks. My main roles in this project were designing the puzzles and creating the 3D/2D art assets.",
+            "link": "https://www.youtube.com/watch?v=F8lXx-AXYzc&ab_channel=AngieZ",
             "linkPretext": "You can find a recording of the gameplay ",
             "linkText": "here",
             "linkPosttext": "!",
             "images": [
-                {"path": "assets/img/meme.png"},
-                {"path": "assets/img/meme.png"}
+                {"path": "assets/img/perspective/mood-board.png"},
+                {"path": "assets/img/perspective/demo.gif"}
             ], 
             "skills": [
                 {"name": "Unity"},
@@ -21,6 +21,32 @@
                 {"name": "3D Modeling"},
                 {"name": "Photoshop"},
                 {"name": "2D Art"}
+            ]
+        },
+        {
+            "title": "The Olympians",
+            "date": "Spring 2020",
+            "description": "A WebGL Olympian dating simulator",
+            "thumbnail": "assets/img/olympians/aphrodite.png",
+            "longDescription": "The Olympians was a final project for the 53-471 GDPP course. This project involved coming up with creative game ideas related to fable, myths, or folklore, and pitching them to the course instructors, who selected the idea that we developed into a full game. This was our first time working on a dating simulator, and we learned a lot about UI design, story-telling, and time management.\n\n This game was built with an interdisciplinary team of 5 over the course of four weeks. For this project, I was the lead programmer, UI artist, and sound designer.",
+            "link": "https://moontwist11.itch.io/the-olympians",
+            "linkPretext": "You can play the game ",
+            "linkText": "here",
+            "linkPosttext": "! The default Chrome setting does not allow WebGL games, so this currently works best on other browsers, such as Firefox and Safari.",
+            "images": [
+                {"path": "assets/img/olympians/title.png"},
+                {"path": "assets/img/olympians/aphro-convo.png"},
+                {"path": "assets/img/olympians/ares-convo.png"},
+                {"path": "assets/img/olympians/ares.png"}
+            ], 
+            "skills": [
+                {"name": "Unity"},
+                {"name": "C#"},
+                {"name": "Programming"},
+                {"name": "UI/UX"},
+                {"name": "Photoshop"},
+                {"name": "2D Art"},
+                {"name": "Sound Design"}
             ]
         }
     ]

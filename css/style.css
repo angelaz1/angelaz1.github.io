@@ -21,6 +21,17 @@ h1 {
     color: blue;
 }
 
+@media (max-width: 700px) {
+    .card-columns.custom-columns {
+        column-count: 1;
+    }
+}
+@media (min-width: 700px) {
+    .card-columns.custom-columns {
+        column-count: 2;
+    }
+}
+
 .ion {
     font-size: 30px;
     width: 30px;
@@ -52,9 +63,6 @@ section {
     z-index: 100;
 }
 
-.copyright {
-    text-align: center
-}
 
 .skill {
     background: rgba(15,18,23,0.4);
@@ -107,4 +115,9 @@ section {
 
 .modal-body {
     text-align: justify;
+}
+
+.copyright {
+    text-align: center;
+    padding: 30px;
 }

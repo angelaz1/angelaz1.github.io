@@ -4,14 +4,15 @@
             "title": "C0 VSCode Extension",
             "date": "Winter 2019",
             "description": "A VSCode Extension made for the CS course 15-122",
-            "thumbnail": "assets/img/meme.png",
-            "longDescription": "As part of transitioning the 15-122 course to supporting the modern text editor VSCode, a group of TAs worked together to create an extension that enabled autocompletion, syntax highlighting, static type-checking, and more. This helped students with learning the new language C0 for this course.",
+            "thumbnail": "assets/img/vscode-extension/snippet.png",
+            "longDescription": "As part of transitioning the 15-122 course to supporting the modern text editor VSCode, a group of TAs worked together to create an extension that enabled autocompletion, syntax highlighting, static type-checking, and more. This helped hundreds of students each semester with learning and coding in the new language C0.",
             "link": "https://marketplace.visualstudio.com/items?itemName=15122staff.c0-lsp",
             "linkPretext": "Link to extension: ",
             "linkText": "here",
             "images": [
-                {"path": "assets/img/meme.png"},
-                {"path": "assets/img/meme.png"}
+                {"path": "assets/img/vscode-extension/extension-page.png"},
+                {"path": "assets/img/vscode-extension/factorial.png"},
+                {"path": "assets/img/vscode-extension/autocomplete.png"}
             ], 
             "skills": [
                 {"name": "TypeScript"},
