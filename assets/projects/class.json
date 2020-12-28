@@ -1,0 +1,15 @@
+{
+    "cards": [
+        {
+            "title": "Pebbles OS Kernel",
+            "date": "Fall 2020",
+            "description": "Course project of 15-410, developed with Ishan Bhargava",
+            "thumbnail": "assets/img/class/os.png"
+        },
+        {
+            "title": "Memory Allocator",
+            "date": "Spring 2020",
+            "description": "Course assignment for 15-213's mallocLab\n\n Created a struct-based segregated free list memory allocator, designing structs in order to best minimize internal fragmentation, accounting for tiny blocks (16 bytes) in constructing doubly-linked free lists, developing a fit algorithm, and implementing free block coalescing."
+        }       
+    ]
+}

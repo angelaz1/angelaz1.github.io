@@ -123,6 +123,10 @@ h1 {
     text-align: justify;
 }
 
+.descrip {
+    white-space: pre-line;
+}
+
 .copyright {
     text-align: center;
     padding: 30px;

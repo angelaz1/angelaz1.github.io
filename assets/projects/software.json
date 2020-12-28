@@ -6,9 +6,14 @@
             "description": "A VSCode Extension made for 15-122",
             "thumbnail": "assets/img/vscode-extension/extension-page.png",
             "longDescription": "As part of transitioning the 15-122 course to supporting the modern text editor VSCode, a group of TAs worked together to create an extension that enabled autocompletion, syntax highlighting, static type-checking, and more. This helped hundreds of students each semester with learning and coding in the new language C0.",
-            "link": "https://marketplace.visualstudio.com/items?itemName=15122staff.c0-lsp",
-            "linkPretext": "Link to extension: ",
-            "linkText": "here",
+            "links": [
+                {
+                    "link": "https://marketplace.visualstudio.com/items?itemName=15122staff.c0-lsp",
+                    "linkPretext": "Link to extension: ",
+                    "linkText": "here",
+                    "linkPosttext": "."
+                }
+            ],
             "images": [
                 {"path": "assets/img/vscode-extension/factorial.png"},
                 {"path": "assets/img/vscode-extension/autocomplete.png"}
@@ -21,57 +26,55 @@
         {
             "title": "Office Hours Queue",
             "date": "Winter 2020",
-            "description": "Adding features to the 15-122 OH queue",
-            "thumbnail": "assets/img/vscode-extension/extension-page.png",
+            "description": "Adding features to the 15-122 Office Hours queue website",
+            "thumbnail": "assets/img/queue/queue.png",
             "longDescription": "This project was done in collaboration with other TAs to add features onto the current 15-122 queue, both in making some general quality-of-life improvements along with addressing some issues with remote office hours. This also had the overarching goal of getting TAs more directly involved with improving the course.",
-            "link": "https://github.com/angelaz1/122queue",
-            "linkPretext": "Link to repository: ",
-            "linkText": "here",
-            "images": [
-                {"path": "assets/img/vscode-extension/factorial.png"},
-                {"path": "assets/img/vscode-extension/autocomplete.png"}
-            ], 
+            "links": [
+                {
+                    "link": "https://github.com/angelaz1/122queue",
+                    "linkPretext": "Link to repository: ",
+                    "linkText": "here",
+                    "linkPosttext": "."
+                }
+            ],
+            "images": [], 
             "skills": [
                 {"name": "Node.js"},
+                {"name": "EJS"},
                 {"name": "MySQL"},
-                {"name": "HTML"},
-                {"name": "CSS"}
+                {"name": "HTML"}
             ]
         },
         {
-            "title": "PlayFab",
-            "date": "Summer 2020",
-            "description": "Internship project with Microsoft",
-            "thumbnail": "assets/img/vscode-extension/extension-page.png",
-            "longDescription": "Placeholder Text",
-            "link": "https://github.com/angelaz1/122queue",
-            "linkPretext": "Link to repository: ",
-            "linkText": "here",
-            "images": [
-                {"path": "assets/img/vscode-extension/factorial.png"},
-                {"path": "assets/img/vscode-extension/autocomplete.png"}
-            ], 
-            "skills": [
-                {"name": "Node.js"},
-                {"name": "MySQL"},
-                {"name": "HTML"},
-                {"name": "CSS"}
-            ]
-        },
-        {
-            "title": "Pebbles OS Kernel",
+            "title": "osu!",
             "date": "Fall 2020",
-            "description": "Course project of 15-410",
-            "thumbnail": "assets/img/vscode-extension/extension-page.png",
-            "longDescription": "Placeholder Text",
+            "description": "Contributor to the open-source, \"free-to-win\" rhythm game osu!",
+            "thumbnail": "assets/img/osu/title.png",
+            "longDescription": "As part of the open-source excursion project with 17-313, I worked with a team of 5 students to tackle various issues in the osu! repository. We mainly focused on fixing UI/UX features and bugs with the game's current chat system. After the course, I also worked with a partner to contribute to osu!'s web API.",
+            "links": [
+                {
+                    "link": "https://www.youtube.com/watch?v=6x8Cg1xx7_Y&ab_channel=AngieZ",
+                    "linkPretext": "A demo video summarizing the changes we worked on for the course can be found ",
+                    "linkText": "here",
+                    "linkPosttext": "."
+                },
+                {
+                    "link": "https://github.com/ppy/osu",
+                    "linkPretext": "You can also find the base repository ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
             "images": [
-                {"path": "assets/img/vscode-extension/factorial.png"},
-                {"path": "assets/img/vscode-extension/autocomplete.png"}
+                {"path": "assets/img/osu/main.png"},
+                {"path": "assets/img/osu/chat.png"}
             ], 
             "skills": [
                 {"name": "Academic"},
-                {"name": "Operating Systems"},
-                {"name": "C"}
+                {"name": "C#"},
+                {"name": "Programming"},
+                {"name": "UI/UX"},
+                {"name": "PHP"}
             ]
         }
     ]

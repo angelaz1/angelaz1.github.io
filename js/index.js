@@ -38,6 +38,7 @@ function parseProjects(filePath, projectId) {
 
 parseProjects("./assets/projects/software.json", "software-projects");
 parseProjects("./assets/projects/game.json", "game-projects");
+parseProjects("./assets/projects/class.json", "class-projects");
 parseProjects("./assets/projects/other.json", "other-projects");
 
 // Perform scrolling animation when projects accordian is toggled
@@ -61,5 +62,5 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
 
   $('html,body').animate({
     scrollTop: newTop
-  }, 500);
+  }, 500); // TODO: USE TRANSFORM RATHER THAN CHANGING TOP
 });
