@@ -29,15 +29,25 @@ section {
 
 .section-title {
     text-align: center;
-    background: rgba(27, 254, 198, 0.786);
+    background: #7CB896;
 }
 
 .section-title h1 {
-    color: rgb(15,18,23);
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 25px 0px; 
+    color: rgb(255, 255, 255);
+}
+
+.section-title h1 .text { 
+    background:#7CB896;
+    padding: 0px 20px; 
 }
 
 #navbar {
-    background-color: #333;
+    background-color: #285083;
     position: fixed;
     top: 0;
     width: 100%;
@@ -45,8 +55,8 @@ section {
     z-index: 100;
 }
 
-h1 {
-    color: blue;
+.name {
+    color: #48A684;
 }
 
 .intro {
@@ -60,6 +70,19 @@ h1 {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    color: #48A684;
+}
+
+.ion:hover {
+    color: #2b7158;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #48A684;
+}
+
+.btn-primary:hover {
+    background-color: #2b7158;
 }
 
 .about {
@@ -79,7 +102,7 @@ h1 {
 }
 
 .skill {
-    background: rgba(15,18,23,0.4);
+    background: #102e5673;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -105,7 +128,7 @@ h1 {
 }
 
 .skill-small {
-    background: rgba(15,18,23,0.4);
+    background: #102e5673;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -130,6 +153,16 @@ h1 {
 .timeline-header {
     text-align: center;
 }
+
+.show-button.btn.collapsed:before
+{
+    content:'Show All ▼';
+}
+.show-button.btn:before
+{
+    content:'Hide ▲';
+}
+
 
 .more-button.btn.collapsed:before
 {

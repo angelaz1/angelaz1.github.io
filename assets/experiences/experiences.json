@@ -2,8 +2,8 @@
     "cards": [
         {
             "title": "Fall 2018 Courses",
+            "shortName": "F18",
             "classes": {
-                "shortName": "F18",
                 "main": [
                     {"number": "15-122", "name": "Principles of Imperative Computation"},
                     {"number": "15-151", "name": "Mathematical Foundations for Computer Science"},
@@ -22,8 +22,8 @@
         },
         {
             "title": "Spring 2019 Courses",
+            "shortName": "S19",
             "classes": {
-                "shortName": "S19",
                 "main": [
                     {"number": "15-150", "name": "Principles of Functional Programming"},
                     {"number": "15-251", "name": "Great Ideas in Theoretical Computer Science"}
@@ -42,8 +42,8 @@
         },
         {
             "title": "Fall 2019 Courses",
+            "shortName": "F19",
             "classes": {
-                "shortName": "F19",
                 "main": [
                     {"number": "15-210", "name": "Parallel and Sequential Data Structures and Algorithms"},
                     {"number": "17-214", "name": "Principles of Software Construction"},
@@ -57,8 +57,8 @@
         },
         {
             "title": "Spring 2020 Courses",
+            "shortName": "S20",
             "classes": {
-                "shortName": "S20",
                 "main": [
                     {"number": "15-213", "name": "Introduction to Computer Systems"},
                     {"number": "53-471", "name": "Game Design, Prototyping, and Production"},
@@ -82,8 +82,8 @@
         },
         {
             "title": "Fall 2020 Courses",
+            "shortName": "F20",
             "classes": {
-                "shortName": "F20",
                 "main": [
                     {"number": "15-410", "name": "Operating System Design and Implementation"},
                     {"number": "17-313", "name": "Foundations in Software Engineering"},
@@ -97,12 +97,12 @@
         },
         {
             "title": "Spring 2021 Courses",
+            "shortName": "S21",
             "classes": {
-                "shortName": "S21",
                 "main": [
                     {"number": "15-451", "name": "Algorithm Design and Analysis"},
                     {"number": "53-472", "name": "Advanced Game Studio"},
-                    {"number": "15-281", "name": "AI: Representation and Problem Solving"}
+                    {"number": "15-281", "name": "AI Representation and Problem Solving"}
                 ],
                 "other": [
                     {"number": "60-125", "name": "Introduction to 3D Animation Pipeline"},

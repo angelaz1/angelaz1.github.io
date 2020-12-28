@@ -67,7 +67,7 @@
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                                <h1 class="card-title">Angela Zhang</h1>
+                                <h1 class="card-title name">Angela Zhang</h1>
                                 <h5 class="card-text">CS Major | Carnegie Mellon University | Class of 2022</h5>
                                 <p>Excited to be interning with Microsoft for Summer 2021!</p>
 
@@ -88,7 +88,7 @@
         <section id="about" class="about-section">
             <div class="card section-title">
                 <div class="card-body">
-                    <h1>~About~</h1>
+                    <h1><span class="text"> About </span></h1>
                 </div>
             </div>
             <div class="card-columns custom-columns" style="padding: 20px">
@@ -151,7 +151,7 @@
         <section id="projects" class="projects-section">
             <div class="card section-title">
                 <div class="card-body">
-                    <h1>~Projects~</h1>
+                    <h1><span class="text"> Projects </span></h1>
                 </div>
             </div>
 
@@ -214,7 +214,7 @@
         <section id="experience">
             <div class="card section-title">
                 <div class="card-body">
-                    <h1>~Experiences~</h1>
+                    <h1><span class="text"> Experiences </span></h1>
                 </div>
             </div>
 
@@ -236,6 +236,10 @@
                 <hr>
 
                 <div id="experiences"></div>
+
+                <div class="row no-gutters">
+                    <button class="btn btn-lg my-4 mx-auto show-button collapsed btn-outline-secondary" type="button" data-target="#currentExperiences" data-toggle="collapse"></button>
+                </div>
             </div>
         </section>
 
@@ -252,6 +256,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+        <script src="js/zenscroll-min.js"></script>
         <script src="js/index.js"></script>
 
 
@@ -334,6 +339,10 @@
 
         <script id="experience-template" type="text/template">
             {{#cards}}
+
+            {{^current}}
+            <div class="collapse" id="currentExperiences">
+            {{/current}}
             <div class="row no-gutters">
                 {{#expDescription}}
                 <div class="col-sm"></div>
@@ -407,6 +416,10 @@
                 <div class="col-sm"></div>
                 {{/classes}}
             </div>
+            {{^current}}
+            </div>
+            {{/current}}
+
             {{/cards}}
         </script>
     </body>
