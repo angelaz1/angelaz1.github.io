@@ -1,0 +1,121 @@
+{
+    "cards": [
+        {
+            "title": "Fall 2018 Courses",
+            "classes": {
+                "shortName": "F18",
+                "main": [
+                    {"number": "15-122", "name": "Principles of Imperative Computation"},
+                    {"number": "15-151", "name": "Mathematical Foundations for Computer Science"},
+                    {"number": "21-241", "name": "Matrices and Linear Transformations"}
+                ],
+                "other": [
+                    {"number": "73-103", "name": "Principles of Macroeconomics"},
+                    {"number": "85-102", "name": "Introuction to Psychology"}
+                ]
+            }
+        },
+        {
+                "title": "15-122 Teaching Assistant",
+                "dates": "Jan 2019 - May 2020",
+                "expDescription": "asdfjkl;"
+        },
+        {
+            "title": "Spring 2019 Courses",
+            "classes": {
+                "shortName": "S19",
+                "main": [
+                    {"number": "15-150", "name": "Principles of Functional Programming"},
+                    {"number": "15-251", "name": "Great Ideas in Theoretical Computer Science"}
+                ],
+                "other": [
+                    {"number": "33-114", "name": "Physics of Musical Sound"},
+                    {"number": "76-101", "name": "Interpretation and Argument"},
+                    {"number": "82-278", "name": "Japanese Film and Literature"}
+                ]
+            }
+        },
+        {
+            "title": "SeisWave Summer Intern",
+            "dates": "Jun 2019 - Aug 2019",
+            "expDescription": "asdfjkl;"
+        },
+        {
+            "title": "Fall 2019 Courses",
+            "classes": {
+                "shortName": "F19",
+                "main": [
+                    {"number": "15-210", "name": "Parallel and Sequential Data Structures and Algorithms"},
+                    {"number": "17-214", "name": "Principles of Software Construction"},
+                    {"number": "21-259", "name": "Calculus in 3D"}
+                ],
+                "other": [
+                    {"number": "15-322", "name": "Introduction to Computer Music"},
+                    {"number": "82-171", "name": "Elementary Japanese"}
+                ]
+            }
+        },
+        {
+            "title": "Spring 2020 Courses",
+            "classes": {
+                "shortName": "S20",
+                "main": [
+                    {"number": "15-213", "name": "Introduction to Computer Systems"},
+                    {"number": "53-471", "name": "Game Design, Prototyping, and Production"},
+                    {"number": "15-259", "name": "Probability and Computing"}
+                ],
+                "other": [
+                    {"number": "76-270", "name": "Writing for the Professions"}
+                ]
+            }
+        },
+        {
+            "title": "15-122 Lead Teaching Assistant",
+            "dates": "May 2020 - Present",
+            "expDescription": "asdfjkl;",
+            "current": true
+        },
+        {
+            "title": "Microsoft SWE Summer Intern",
+            "dates": "Jun 2020 - Aug 2020",
+            "expDescription": "asdfjkl;"
+        },
+        {
+            "title": "Fall 2020 Courses",
+            "classes": {
+                "shortName": "F20",
+                "main": [
+                    {"number": "15-410", "name": "Operating System Design and Implementation"},
+                    {"number": "17-313", "name": "Foundations in Software Engineering"},
+                    {"number": "15-317", "name": "Constructive Logic"}
+                ],
+                "other": [
+                    {"number": "33-104", "name": "Experimental Physics"},
+                    {"number": "98-272", "name": "Financial Literacy for Beginners"}
+                ]
+            }
+        },
+        {
+            "title": "Spring 2021 Courses",
+            "classes": {
+                "shortName": "S21",
+                "main": [
+                    {"number": "15-451", "name": "Algorithm Design and Analysis"},
+                    {"number": "53-472", "name": "Advanced Game Studio"},
+                    {"number": "15-281", "name": "AI: Representation and Problem Solving"}
+                ],
+                "other": [
+                    {"number": "60-125", "name": "Introduction to 3D Animation Pipeline"},
+                    {"number": "33-120", "name": "Science and Science Fiction"}
+                ]
+            },
+            "current": true
+        },
+        {
+            "title": "Microsoft SWE Summer Intern",
+            "dates": "Jun 2021 - Aug 2021",
+            "expDescription": "asdfkajsdfklasjd;",
+            "current": true
+        }
+    ]
+}

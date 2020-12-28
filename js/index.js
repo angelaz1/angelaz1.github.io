@@ -64,3 +64,15 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
     scrollTop: newTop
   }, 500); // TODO: USE TRANSFORM RATHER THAN CHANGING TOP
 });
+
+function parseExperiences(filePath, projectId) {
+    jQuery.get(filePath, function(data) {
+
+    var template = $("#experience-template").html();
+    
+    var html = Mustache.render(template, data);
+    document.getElementById(projectId).innerHTML += html;
+  }, "json");
+}
+
+parseExperiences("./assets/experiences/experiences.json", "experiences");

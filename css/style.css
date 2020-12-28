@@ -127,6 +127,19 @@ h1 {
     white-space: pre-line;
 }
 
+.timeline-header {
+    text-align: center;
+}
+
+.more-button.btn.collapsed:before
+{
+    content:'More ▼';
+}
+.more-button.btn:before
+{
+    content:'Less ▲';
+}
+
 .copyright {
     text-align: center;
     padding: 30px;

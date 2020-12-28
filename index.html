@@ -50,6 +50,9 @@
                             <a class="dropdown-item" href="#projects-misc">Other Projects</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiences</a>
+                    </li>
                 </ul>
             </div>     
         </nav>
@@ -207,6 +210,52 @@
             </div>
         </section>
 
+        <!-- Experiences -->
+        <section id="experience">
+            <div class="card section-title">
+                <div class="card-body">
+                    <h1>~Experiences~</h1>
+                </div>
+            </div>
+
+            <div class="container py-4">
+                <!-- Headers -->
+                <div class="row no-gutters">
+                    <div class="col-sm timeline-header"> <h3>Academics</h3> </div>
+                    <!-- Center Dot -->
+                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                        <div class="row h-100">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm timeline-header"> <h3>Work Experiences</h3> </div>
+                </div>
+                <!--/row-->
+                
+                <hr>
+
+                <div id="experiences"></div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="copyright">
+                © 2020 Angela Zhang
+            </p>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+
+
+        <!-- Templates -->
         <script id="project-card-template" type="text/template">
             <div class="row justify-content-center mb-2 project-grid">
             {{#cards}}
@@ -283,17 +332,82 @@
         </div>
         </script>
 
-        <footer>
-            <p class="copyright">
-                © 2020 Angela Zhang
-            </p>
-        </footer>
+        <script id="experience-template" type="text/template">
+            {{#cards}}
+            <div class="row no-gutters">
+                {{#expDescription}}
+                <div class="col-sm"></div>
+                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        <span class="badge badge-pill {{#current}}bg-success{{/current}} {{^current}}bg-light border{{/current}}">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                {{/expDescription}}
 
-        <!-- Javascript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+
+                <div class="col-sm py-2">
+                    <div class="card {{#current}}border-success{{/current}} shadow">
+                        <div class="card-body">
+                            <h4 class="card-title {{#current}}text-success{{/current}}">{{title}}</h4>
+                            {{#dates}}
+                            <h6 class="{{#current}}text-success{{/current}} {{^current}}text-muted{{/current}}">{{dates}}</h6>
+                            {{/dates}}
+
+                            {{#classes}}
+                                <p class="card-text">
+                                    <ul>
+                                        {{#main}}
+                                        <li>{{number}} {{name}}</li>
+                                        {{/main}}
+                                        {{#other}}
+                                        <div class="collapse" id="more{{shortName}}">
+                                            <li>{{number}} {{name}}</li>
+                                        </div>
+                                        {{/other}}
+                                    </ul>
+                                    <button class="btn btn-sm more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+                                </p>
+                            {{/classes}}
+
+                            {{#expDescription}}
+                                <p class="card-text">{{expDescription}}</p>
+                            {{/expDescription}}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Dot and Lines -->
+                {{#classes}}
+                <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                        {{#current}}
+                        <span class="badge badge-pill bg-success">&nbsp;</span>
+                        {{/current}}
+                        {{^current}}
+                        <span class="badge badge-pill bg-light border">&nbsp;</span>
+                        {{/current}}
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+                {{/classes}}
+            </div>
+            {{/cards}}
+        </script>
     </body>
 </html>
