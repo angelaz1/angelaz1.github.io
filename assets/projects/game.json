@@ -56,6 +56,64 @@
                 {"name": "2D Art"},
                 {"name": "Sound Design"}
             ]
+        },
+        {
+            "title": "Keys to Happiness",
+            "date": "Spring 2020",
+            "description": "A music-based puzzle platformer featuring a melodica player!",
+            "thumbnail": "assets/img/keys/title.png",
+            "longDescription": "Keys to Happiness was a project for the 53-471 GDPP course. This project involved creating a creative platformer game with an interdisciplinary team of 5 over the course of four weeks. For this project, I worked primarily as a 2D artist (title screen, enemy characters and UI elements) and sound designer, but also helped as a backup programmer.",
+            "links": [
+                {
+                    "link": "https://moontwist11.itch.io/keys-to-happiness",
+                    "linkPretext": "You can play the game ",
+                    "linkText": "here",
+                    "linkPosttext": "! The default Chrome settings do not allow WebGL games, so this currently works best on other browsers, such as Firefox and Safari."
+                }
+            ],
+            "images": [
+                {"path": "assets/img/keys/game.png"},
+                {"path": "assets/img/keys/sheet-music.png"},
+                {"path": "assets/img/keys/battle.png"}
+            ], 
+            "skills": [
+                {"name": "Unity"},
+                {"name": "UI/UX"},
+                {"name": "Photoshop"},
+                {"name": "2D Art"},
+                {"name": "Sound Design"},
+                {"name": "C#"},
+                {"name": "Programming"}
+            ]
+        },
+        {
+            "title": "Fowl Play",
+            "date": "Spring 2020",
+            "description": "A multiplayer basketball game about cheating birds",
+            "thumbnail": "assets/img/fowl/title.png",
+            "longDescription": "Fowl Play was a project for the 53-471 GDPP course. This project had the theme of remaking an existing game - in this case, basketball. We created Fowl Play based on the idea of cheating birds playing 1v1's. We worked in interdisciplinary teams of 6 over the course of three weeks. For this project, I worked primarily as a 2D artist, UI programmer, and backup sound designer.",
+            "links": [
+                {
+                    "link": "https://moontwist11.itch.io/fowl-play",
+                    "linkPretext": "You can play the game ",
+                    "linkText": "here",
+                    "linkPosttext": "! This game does require two controllers (XBox or PS4) to play. The default Chrome settings do not allow WebGL games, so this currently works best on other browsers, such as Firefox and Safari."
+                }
+            ],
+            "images": [
+                {"path": "assets/img/fowl/tutorial.png"},
+                {"path": "assets/img/fowl/shot.png"},
+                {"path": "assets/img/fowl/game.png"}
+            ], 
+            "skills": [
+                {"name": "Unity"},
+                {"name": "C#"},
+                {"name": "Programming"},
+                {"name": "UI/UX"},
+                {"name": "Photoshop"},
+                {"name": "2D Art"},
+                {"name": "Sound Design"}
+            ]
         }
     ]
 }
