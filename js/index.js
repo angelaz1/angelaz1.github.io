@@ -54,7 +54,7 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
   }
 
   var newTop = $card.offset().top - additionalOffset;
-  if (newTop + SCROLL_UP_THRESHOLD < window.pageYOffset || 
+  if ((!showingNavbar && newTop + SCROLL_UP_THRESHOLD < window.pageYOffset) || 
     (showingNavbar && newTop <= window.pageYOffset + SCROLL_DOWN_THRESHOLD)) {
     // Move accordian header to be below the navbar
     newTop -= 50;
