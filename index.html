@@ -10,15 +10,13 @@
         Computer Science, Carnegie Mellon University, CMU, Game Design">
 
         <!-- Website description -->
-        <meta name="description" content="Personal website for Angela Zhang - CS
-        Major at CMU, Class of 2022">
-        
+        <meta name="description" content="Personal website for Angela Zhang - CS Major at CMU, Class of 2022">
         
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         
         <!-- Stylesheets -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.css" crossorigin="anonymous" rel="stylesheet">
         <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
@@ -184,7 +182,7 @@
 
                 <!-- Class Projects -->
                 <div class="card">
-                    <div class="card-header" id="projects-misc" style="transform: rotate(0);">
+                    <div class="card-header" id="projects-class" style="transform: rotate(0);">
                         <h3 class="m-3">
                             Class Projects
                             <a href="#" class="stretched-link" data-toggle="collapse" data-target="#classProjects"></a>
@@ -222,7 +220,7 @@
                 <!-- Headers -->
                 <div class="row no-gutters">
                     <div class="col-sm timeline-header"> <h3>Academics</h3> </div>
-                    <!-- Center Dot -->
+                    <!-- Center Line -->
                     <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
                         <div class="row h-100">
                             <div class="col border-right">&nbsp;</div>
@@ -231,15 +229,13 @@
                     </div>
                     <div class="col-sm timeline-header"> <h3>Work Experiences</h3> </div>
                 </div>
-                <!--/row-->
                 
                 <hr>
+                <div class="row no-gutters">
+                    <button class="btn btn-lg mb-3 mx-auto show-button collapsed btn-outline-secondary" type="button" data-target=".pastExperiences" data-toggle="collapse"></button>
+                </div>
 
                 <div id="experiences"></div>
-
-                <div class="row no-gutters">
-                    <button class="btn btn-lg my-4 mx-auto show-button collapsed btn-outline-secondary" type="button" data-target="#currentExperiences" data-toggle="collapse"></button>
-                </div>
             </div>
         </section>
 
@@ -340,10 +336,11 @@
             {{#cards}}
 
             {{^current}}
-            <div class="collapse" id="currentExperiences">
+            <div class="collapse pastExperiences">
             {{/current}}
             <div class="row no-gutters">
-                {{#expDescription}}
+                <!-- Center Dot and Lines for Work Experiences -->
+                {{#dates}}
                 <div class="col-sm"></div>
                 <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
                     <div class="row h-50">
@@ -358,7 +355,7 @@
                         <div class="col">&nbsp;</div>
                     </div>
                 </div>
-                {{/expDescription}}
+                {{/dates}}
 
 
                 <div class="col-sm py-2">
@@ -381,18 +378,24 @@
                                         </div>
                                         {{/other}}
                                     </ul>
-                                    <button class="btn btn-sm more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+                                    <button class="btn btn-sm mb-n3 more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
                                 </p>
                             {{/classes}}
 
-                            {{#expDescription}}
-                                <p class="card-text">{{expDescription}}</p>
-                            {{/expDescription}}
+                            {{#dates}}
+                                <p class="card-text">
+                                    <ul>
+                                        {{#expDescriptions}}
+                                        <li style="margin: 10px 0;">{{description}}</li>
+                                        {{/expDescriptions}}
+                                    </ul>
+                                </p>
+                            {{/dates}}
                         </div>
                     </div>
                 </div>
 
-                <!-- Center Dot and Lines -->
+                <!-- Center Dot and Lines for Classes -->
                 {{#classes}}
                 <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
                     <div class="row h-50">
@@ -400,12 +403,7 @@
                         <div class="col">&nbsp;</div>
                     </div>
                     <h5 class="m-2">
-                        {{#current}}
-                        <span class="badge badge-pill bg-success">&nbsp;</span>
-                        {{/current}}
-                        {{^current}}
-                        <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        {{/current}}
+                        <span class="badge badge-pill {{#current}}bg-success{{/current}} {{^current}}bg-light border{{/current}}">&nbsp;</span>
                     </h5>
                     <div class="row h-50">
                         <div class="col border-right">&nbsp;</div>
@@ -415,6 +413,7 @@
                 <div class="col-sm"></div>
                 {{/classes}}
             </div>
+
             {{^current}}
             </div>
             {{/current}}
