@@ -107,5 +107,5 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
   $('html,body').stop();
   $('html,body').animate({
     scrollTop: newTop
-  }, 500); // TODO: USE TRANSFORM RATHER THAN CHANGING TOP
+  }, "slow");
 });

@@ -72,6 +72,7 @@
             "skills": [
                 {"name": "Academic"},
                 {"name": "C#"},
+                {"name": ".NET Framework"},
                 {"name": "Programming"},
                 {"name": "UI/UX"},
                 {"name": "PHP"}

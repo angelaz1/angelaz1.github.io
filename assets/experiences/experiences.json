@@ -17,6 +17,7 @@
         },
         {
                 "title": "15-122 Teaching Assistant",
+                "shortName": "122TA",
                 "dates": "Jan 2019 - May 2020",
                 "expDescriptions": [
                     {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
@@ -40,6 +41,7 @@
         },
         {
             "title": "SeisWave Summer Intern",
+            "shortName": "SeiswaveS19",
             "dates": "Jun 2019 - Aug 2019",
             "expDescriptions": [
                 {"description": "Worked closely with seismic data and learned about performing NMO-correction with CDP-offset gathers"},
@@ -77,6 +79,7 @@
         },
         {
             "title": "15-122 Lead Teaching Assistant",
+            "shortName": "122LeadTA",
             "dates": "May 2020 - Present",
             "expDescriptions": [
                 {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
@@ -87,6 +90,7 @@
         },
         {
             "title": "Microsoft SWE Summer Intern",
+            "shortName": "MicrosoftS20",
             "dates": "Jun 2020 - Aug 2020",
             "expDescriptions": [
                 {"description": "Worked directly with PlayFab, a open-source backend service for game developers hosting 2.5 billion player accounts for over 5000 games"},
@@ -128,6 +132,7 @@
         },
         {
             "title": "Incoming Microsoft SWE Summer Intern",
+            "shortName": "MicrosoftS21",
             "dates": "Jun 2021 - Aug 2021",
             "current": true
         }

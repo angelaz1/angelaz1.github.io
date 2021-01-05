@@ -56,7 +56,7 @@
         </nav>
         
         <!-- Intro Section -->
-        <section class="intro-section">
+        <section class="intro-section fade-in">
             <div class="intro">
                 <div class="row justify-content-center">
                     <div class="col-md-auto align-self-center">
@@ -83,7 +83,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section fade-in">
             <div class="card section-title">
                 <div class="card-body">
                     <h1><span class="text"> About </span></h1>
@@ -130,6 +130,8 @@
                     <span class="skill">CSS</span>
                     <span class="skill">SQL</span>
                     <span class="skill">Docker</span>
+                    <span class="skill">Git/GitHub</span>
+                    <span class="skill">LaTeX</span>
                     <span class="skill">TypeScript</span>
                     <span class="skill">Swift</span>
                     <span class="skill">SML</span>
@@ -146,7 +148,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section">
+        <section id="projects" class="projects-section fade-in">
             <div class="card section-title">
                 <div class="card-body">
                     <h1><span class="text"> Projects </span></h1>
@@ -209,7 +211,7 @@
         </section>
 
         <!-- Experiences -->
-        <section id="experience">
+        <section id="experience" class="experiences-section fade-in">
             <div class="card section-title">
                 <div class="card-body">
                     <h1><span class="text"> Experiences </span></h1>
@@ -241,7 +243,7 @@
 
 
         <!-- Footer -->
-        <footer>
+        <footer class="mb-n3">
             <p class="copyright">
                 © 2020 Angela Zhang
             </p>
@@ -260,7 +262,7 @@
             <div class="row justify-content-center mb-2 project-grid">
             {{#cards}}
             <div class="col-auto mb-3">
-            <div class="card d-flex h-100" style="max-width: 27rem;">
+            <div class="card d-flex h-100 {{#longDescription}}project-card{{/longDescription}}" style="max-width: 27rem;">
                 <div class="card-body">
                     <h3 class="card-title">{{title}}</h3>
                     <h5>{{date}}</h5>
@@ -386,10 +388,15 @@
                                 <p class="card-text">
                                     <ul>
                                         {{#expDescriptions}}
-                                        <li style="margin: 10px 0;">{{description}}</li>
+                                            <div class="collapse" id="more{{shortName}}">
+                                                <li style="margin: 10px 0;">{{description}}</li>
+                                            </div>
                                         {{/expDescriptions}}
                                     </ul>
                                 </p>
+                                {{#expDescriptions.length}}
+                                    <button class="btn btn-sm more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+                                {{/expDescriptions.length}}
                             {{/dates}}
                         </div>
                     </div>
