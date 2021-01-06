@@ -72,7 +72,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-auto"><a href="https://github.com/angelaz1" target="_blank" rel="noopener noreferrer" class="ion ion-social-github"></a></div>
                                     <div class="col-auto"><a href="https://www.linkedin.com/in/angela-zhang122" target="_blank" rel="noopener noreferrer" class="ion ion-social-linkedin"></a></div>
-                                    <div class="col-auto"><a href="mailto:angelaz1@cs.cmu.edu" target="_blank" rel="noopener noreferrer" class="ion ion-android-mail"></a></div>
+                                    <div class="col-auto"><a href="mailto:angelaz1@andrew.cmu.edu" target="_blank" rel="noopener noreferrer" class="ion ion-android-mail"></a></div>
                                     <div class="col-auto"><a class="btn btn-primary" href="assets/misc/resume.pdf" target="blank" role="button">Resume</a></div>
                                 </div>
                             </div>
@@ -374,29 +374,34 @@
                                         {{#main}}
                                         <li>{{number}} {{name}}</li>
                                         {{/main}}
-                                        {{#other}}
+                                        {{#other.length}}
                                         <div class="collapse" id="more{{shortName}}">
+                                            {{#other}}
                                             <li>{{number}} {{name}}</li>
+                                            {{/other}}
                                         </div>
-                                        {{/other}}
+                                        {{/other.length}}
                                     </ul>
-                                    <button class="btn btn-sm mb-n3 more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+
+                                    {{#other.length}}
+                                    <button class="btn btn-sm mb-n3 more-button collapsed {{#current}}btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+                                    {{/other.length}}
                                 </p>
                             {{/classes}}
 
                             {{#dates}}
+                            {{#expDescriptions.length}}
                                 <p class="card-text">
-                                    <ul>
-                                        {{#expDescriptions}}
-                                            <div class="collapse" id="more{{shortName}}">
-                                                <li style="margin: 10px 0;">{{description}}</li>
-                                            </div>
-                                        {{/expDescriptions}}
-                                    </ul>
+                                    <div class="collapse" id="more{{shortName}}">
+                                        <ul>
+                                            {{#expDescriptions}}
+                                            <li style="margin: 10px 0;">{{description}}</li>
+                                            {{/expDescriptions}}
+                                        </ul>
+                                    </div>
                                 </p>
-                                {{#expDescriptions.length}}
-                                    <button class="btn btn-sm more-button collapsed {{#current}}text-success btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
-                                {{/expDescriptions.length}}
+                                <button class="btn btn-sm more-button collapsed {{#current}}btn-outline-success{{/current}} {{^current}}btn-outline-secondary{{/current}}" type="button" data-target="#more{{shortName}}" data-toggle="collapse"></button>
+                            {{/expDescriptions.length}}
                             {{/dates}}
                         </div>
                     </div>
