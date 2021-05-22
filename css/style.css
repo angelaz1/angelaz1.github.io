@@ -51,9 +51,9 @@ main {
 }
 
 .section-title:after {
-    content: ''; height: 10px; width: 100px;
+    content: ''; height: 8px; width: 80px;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
     display: block;
     background: #48A684;
@@ -155,7 +155,7 @@ main {
 }
 
 .bio-text p b {
-    color: #2d745a; 
+    color: #1e7555; 
 }
 
 @media (max-width: 992px) {

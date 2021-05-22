@@ -2,7 +2,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
     <a class="navbar-brand" href="index.html">
         <img src="assets/img/az.png" alt="" class="d-inline-block align-text-top mr-1" width="24" height="24"></img>
-        Angela Zhang
+        <b>Angela Zhang</b>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,27 +10,23 @@
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul id="navbar-nav" class="navbar-nav mr-auto" onload="setActivePage">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="projects.html">Projects</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="projects.html#projects-software">Software Projects</a>
-                    <a class="dropdown-item" href="projects.html#projects-game">Game Projects</a>
-                    <a class="dropdown-item" href="projects.html#projects-class">Class Projects</a>
-                    <a class="dropdown-item" href="projects.html#projects-misc">Other Projects</a>
-                </div>
-            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="experience.html">Experiences</a>
             </li>
         </ul>
     </div>     
 </nav>
+
+<script>
+    var loc = window.location.pathname;
+    $('.navbar-nav li').find('a').each(function() {
+        $(this).toggleClass('active', loc.includes($(this).attr('href')));
+    });
+</script>
