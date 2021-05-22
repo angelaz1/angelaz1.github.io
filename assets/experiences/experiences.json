@@ -112,7 +112,7 @@
                     {"number": "98-272", "name": "Financial Literacy for Beginners"}
                 ]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "Spring 2021 Courses",
@@ -134,6 +134,22 @@
             "title": "Incoming Microsoft SWE Summer Intern",
             "shortName": "MicrosoftS21",
             "dates": "Jun 2021 - Aug 2021",
+            "current": true
+        },
+        {
+            "title": "Fall 2021 Courses",
+            "shortName": "F21",
+            "classes": {
+                "main": [
+                    {"number": "53-831", "name": "Building Virtual Worlds"},
+                    {"number": "53-608", "name": "Visual Story"},
+                    {"number": "98-291", "name": "Android Development"}
+                ],
+                "other": [
+                    {"number": "53-711", "name": "Improvisational Acting"},
+                    {"number": "53-700", "name": "ETC Fundamentals"}
+                ]
+            },
             "current": true
         }
     ]

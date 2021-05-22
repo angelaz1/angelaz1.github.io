@@ -7,9 +7,27 @@ html{
 }
 
 html, body {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.main-page {
+    background-image: url("../assets/img/background.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    background: #fff;
+}
+.main-section {
+    padding: 20px 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 @keyframes fadeUp {
@@ -23,27 +41,22 @@ html, body {
     }
 }
 
-section {
+.fade-in {
     animation: 1s ease-out 0s 1 fadeUp;
 }
 
 .section-title {
-    text-align: center;
-    background: #7CB896;
+    margin-left: 10px;
+    padding-top: 10px;
 }
 
-.section-title h1 {
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 1px solid #FFFFFF; 
-    line-height: 0.1em;
-    margin: 25px 0px; 
-    color: #FFFFFF;
-}
-
-.section-title h1 .text { 
-    background:#7CB896;
-    padding: 0px 20px; 
+.section-title:after {
+    content: ''; height: 10px; width: 100px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    background: #48A684;
 }
 
 #navbar {
@@ -54,13 +67,44 @@ section {
     z-index: 100;
 }
 
+.intro-container {
+    content: ''; position: absolute; 
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.intro:before {
+    content: ''; position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.intro {
+    padding-left: 105px;
+    padding-right: 10px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.profile {
+    border: 5px solid rgb(255, 255, 255);
+    width: 200px;
+    position: absolute;
+    left: 0; top: 0;
+    transform: translate(-50%,-30%);
+    z-index: 10;
+}
+
+.my-description {
+    margin-left: 90px;
+    margin-right: 10px;
+} 
 .name {
     color: #48A684;
 }
 
-.intro {
-    padding: 20px;
-    background: #fff;
+.fullscreen {
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100vh;
 }
 
 .ion {
@@ -72,7 +116,7 @@ section {
     color: #48A684;
 }
 
-.ion:hover {
+.ion:hover, .scroll-button:hover  {
     color: #2b7158;
 }
 
@@ -86,24 +130,79 @@ section {
     border-color: #2b7158;
 }
 
+.scroll-button {
+    position: absolute;
+    bottom: 10px;
+    margin: auto;
+
+    font-size: 45px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #e9e9e9;
+}
+
 .about {
     padding: 20px;
     background: #fff;
 }
 
-@media (max-width: 700px) {
-    .card-columns.custom-columns {
-        column-count: 1;
+.bio-text p b {
+    color: #2d745a; 
+}
+
+@media (max-width: 992px) {
+    .bio-circles {
+        visibility: hidden;
     }
 }
-@media (min-width: 700px) {
-    .card-columns.custom-columns {
-        column-count: 2;
+@media (min-width: 992px) {
+    .bio-circles {
+        visibility: visible;
     }
 }
 
+.bio-circles div {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bio-circles #cmu-logo {
+    width: 170px; height: 170px;
+    top: 0%; left: 40%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://tinyurl.com/4z76cpu2');
+    background-size: 160px 160px;
+}
+
+.bio-circles #scs-logo {
+    width: 130px; height: 130px;
+    top: 30%; left: 75%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://tinyurl.com/n8unuy3k');
+    background-size: 100px 100px;
+}
+
+.bio-circles #honk-photo {
+    width: 140px; height: 140px;
+    top: 50%; left: 25%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://tinyurl.com/5xctd8uv');
+    background-size: 130px 130px;
+}
+
+.bio-circles #ta-logo {
+    width: 180px; height: 180px;
+    top: 80%; left: 60%;
+    transform: translate(-50%, -50%);
+    background-image: url("../assets/img/bio/@.png");
+    background-size: 170px 170px;
+}
 .skill {
-    background: #102e5673;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -111,6 +210,18 @@ section {
     margin-bottom: 10px;
     line-height: 300%;
     white-space: nowrap;
+}
+
+.skills .coding {
+    background: #10564173;
+}
+
+.skills .software {
+    background: #103a5673;
+}
+
+.skills .soft {
+    background: #11105673;
 }
 
 .skills {
@@ -177,10 +288,12 @@ section {
 
 .show-button.btn.collapsed:before
 {
+    font-size: 18px;
     content:'Show All ▼';
 }
 .show-button.btn:before
 {
+    font-size: 18px;
     content:'Hide ▲';
 }
 
