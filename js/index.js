@@ -65,6 +65,22 @@ var showingNavbar = true;
 var prevScrollpos = window.pageYOffset;
 
 /**
+ * Hides the navbar
+ */
+function hideNavbar() {
+  document.getElementById("navbar").style.top = "-500px";
+  showingNavbar = false;
+}
+
+/**
+ * Shows the navbar
+ */
+function showNavbar() {
+  document.getElementById("navbar").style.top = "0";
+  showingNavbar = true;
+}
+
+/**
  * When scrolling, hides or shows the navbar accordingly
  */
 window.onscroll = function() {
@@ -72,11 +88,9 @@ window.onscroll = function() {
 
   // Hide navbar if scroll too far down; show upon scrolling up
   if (currentScrollPos > prevScrollpos + SCROLL_DOWN_THRESHOLD) {
-    document.getElementById("navbar").style.top = "-500px";
-    showingNavbar = false;
+    hideNavbar();
   } else if (prevScrollpos > currentScrollPos + SCROLL_UP_THRESHOLD) {
-    document.getElementById("navbar").style.top = "0";
-    showingNavbar = true;
+    showNavbar();
   }
 
   prevScrollpos = currentScrollPos;
@@ -98,11 +112,7 @@ $('.collapse.project').on('show.bs.collapse', function(e) {
   }
 
   var newTop = $card.offset().top - additionalOffset;
-  if ((!showingNavbar && newTop + SCROLL_UP_THRESHOLD < window.pageYOffset) || 
-    (showingNavbar && newTop <= window.pageYOffset + SCROLL_DOWN_THRESHOLD)) {
-    // Move accordian header to be below the navbar
-    newTop -= 50;
-  }
+  hideNavbar(); // Always hide navbar to allow for easy alignment
 
   $('html,body').stop();
   $('html,body').animate({

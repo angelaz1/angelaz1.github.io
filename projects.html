@@ -25,8 +25,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-
+        
         <!-- Website Icon -->
         <link rel="icon" href="assets/img/az.png">    
     </head>
@@ -46,55 +45,59 @@
                     </div>
                 </div>
 
-                <div id="accordion">
+                <div id="project-accordion">
                     <!-- Software Projects -->
-                    <div class="card">
-                        <div class="card-header" id="projects-software" style="transform: rotate(0);">
-                            <h4 class="m-3">
-                                Software Projects
-                                <a href="#" class="stretched-link" data-toggle="collapse" data-target="#softwareProjects"></a>
+                    <div class="card collapse-card">
+                        <div class="card-header collapse-card-header" id="projects-software" style="transform: rotate(0);">
+                            <h4>
+                                <a href="#" class="stretched-link collapse-link" data-toggle="collapse" data-target="#softwareProjects">
+                                    Software Projects
+                                </a>
                             </h4>
                         </div>
-                        <div id="softwareProjects" class="collapse show project" aria-labelledby="softwareProjects" data-parent="#accordion">
+                        <div id="softwareProjects" class="collapse show project" aria-labelledby="softwareProjects" data-parent="#project-accordion">
                             <div id="software-projects"></div>
                         </div>
                     </div>
 
                     <!-- Game Projects -->
-                    <div class="card">
-                        <div class="card-header" id="projects-game" style="transform: rotate(0);">
-                            <h4 class="m-3">
-                                Game Projects
-                                <a href="#" class="stretched-link" data-toggle="collapse" data-target="#gameProjects"></a>
+                    <div class="card collapse-card">
+                        <div class="card-header collapse-card-header" id="projects-game" style="transform: rotate(0);">
+                            <h4>
+                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#gameProjects">
+                                    Game Projects
+                                </a>
                             </h4>
                         </div>
-                        <div id="gameProjects" class="collapse project" aria-labelledby="gameProjects" data-parent="#accordion">
+                        <div id="gameProjects" class="collapse project" aria-labelledby="gameProjects" data-parent="#project-accordion">
                             <div id="game-projects"></div>
                         </div>
                     </div>
 
                     <!-- Class Projects -->
-                    <div class="card">
-                        <div class="card-header" id="projects-class" style="transform: rotate(0);">
-                            <h4 class="m-3">
-                                Class Projects
-                                <a href="#" class="stretched-link" data-toggle="collapse" data-target="#classProjects"></a>
+                    <div class="card collapse-card">
+                        <div class="card-header collapse-card-header" id="projects-class" style="transform: rotate(0);">
+                            <h4>
+                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#classProjects">
+                                    Class Projects
+                                </a>
                             </h4>
                         </div>
-                        <div id="classProjects" class="collapse project" aria-labelledby="classProjects" data-parent="#accordion">
+                        <div id="classProjects" class="collapse project" aria-labelledby="classProjects" data-parent="#project-accordion">
                             <div id="class-projects"></div>
                         </div>
                     </div>
                     
                     <!-- Other Projects -->
-                    <div class="card">
-                        <div class="card-header" id="projects-misc" style="transform: rotate(0);">
-                            <h4 class="m-3">
-                                Other Projects
-                                <a href="#" class="stretched-link" data-toggle="collapse" data-target="#otherProjects"></a>
+                    <div class="card collapse-card">
+                        <div class="card-header collapse-card-header" id="projects-misc" style="transform: rotate(0);">
+                            <h4>
+                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#otherProjects">
+                                    Other Projects
+                                </a>
                             </h4>
                         </div>
-                        <div id="otherProjects" class="collapse project" aria-labelledby="otherProjects" data-parent="#accordion">
+                        <div id="otherProjects" class="collapse project" aria-labelledby="otherProjects" data-parent="#project-accordion">
                             <div id="other-projects"></div>
                         </div>
                     </div>
@@ -118,7 +121,7 @@
             <div class="row justify-content-center mb-2 project-grid">
             {{#cards}}
             <div class="col-auto mb-3">
-            <div class="card d-flex h-100 {{#longDescription}}project-card{{/longDescription}}" style="max-width: 27rem;">
+            <div class="card d-flex h-100 {{#longDescription}}project-card{{/longDescription}}" style="max-width: 22rem;">
                 <div class="card-body">
                     <h4 class="card-title">{{title}}</h4>
                     <h5>{{date}}</h5>
@@ -189,5 +192,8 @@
             {{/cards}}
         </div>
         </script>
+
+        <!-- Javascript -->
+        <script src="js/index.js"></script>
     </body>
 </html>
