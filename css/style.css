@@ -7,7 +7,6 @@ html {
 }
 
 html, body {
-    /* padding-top: 30px; */
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -27,21 +26,6 @@ main {
 .main-section {
     padding: 20px 100px;
 }
-
-/* @keyframes fadeUp {
-    0% {
-      transform: translateY(10%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: 1s ease-out 0s 1 fadeUp;
-} */
 
 .fade-in {
     opacity: 0;
@@ -405,5 +389,5 @@ main {
 }
 
 footer {
-    background-color: #7CB896;
+    background-color: #6ba791;
 }
