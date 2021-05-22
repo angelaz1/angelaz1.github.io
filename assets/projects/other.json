@@ -25,6 +25,37 @@
                 {"name": "Flute"},
                 {"name": "Fun!"}
             ]
+        },
+        {
+            "title": "Shabu Animation",
+            "date": "Spring 2021",
+            "description": "A short 3D animation about Shabu the Hotpot",
+            "thumbnail": "assets/img/shabu/forest.png",
+            "longDescription": "This animation was created the 60-125 Intro to 3D Animation course. Over the course of a semester, I designed, modeled, textured, rigged, and animated Shabu, a hotpot character residing in a snowy forest. The final result was a 30-second animated short of our character. This was my first time extensively workinng with Maya on a full character animation (my previous work with 3D animation have been very basic), and I really enjoyed the class!",
+            "links": [
+                {
+                    "link": "https://youtu.be/11LI0hHUBWE",
+                    "linkPretext": "You can watch the final animation ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [
+                {"path": "assets/img/shabu/design.png"},
+                {"path": "assets/img/shabu/model.png"},
+                {"path": "assets/img/shabu/textured.png"},
+                {"path": "assets/img/shabu/rig.png"},
+                {"path": "assets/img/shabu/campfire.png"}
+            ], 
+            "skills": [
+                {"name": "3D Modeling"},
+                {"name": "Character Design"},
+                {"name": "Animation"},
+                {"name": "Rigging"},
+                {"name": "Storyboarding"},
+                {"name": "Video Editing"},
+                {"name": "SFX/BGM"}
+            ]
         }
     ]
 }
