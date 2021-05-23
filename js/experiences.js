@@ -13,6 +13,10 @@ function parseExperiences(filePath, projectId) {
     var html = Mustache.render(template, data);
     document.getElementById(projectId).innerHTML += html;
   }, "json");
+
+  setTimeout(function(){
+    fadeInStaggered(); // Fade in after all experiences loaded
+  }, 500);
 }
   
 /**
