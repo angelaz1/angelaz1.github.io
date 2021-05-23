@@ -23,3 +23,25 @@ function parseExperiences(filePath, projectId) {
  * Parsing all experiences JSON files
  */
 parseExperiences("./assets/experiences/experiences.json", "experiences");
+
+/** Scrolling Functions */
+
+/**
+ * Shows up button when scrolling past a certain height on page
+ */
+const scrollFunc = () => {
+  let upButton = document.getElementById('up-button');
+  console.log(upButton)
+  let y = window.scrollY;
+  
+  if (y > 200) {
+    upButton.classList.add('show');
+    upButton.classList.remove('hide');
+  } else {
+    upButton.classList.remove('show');
+    upButton.classList.add('hide');
+  }
+};
+
+
+window.addEventListener("scroll", scrollFunc);

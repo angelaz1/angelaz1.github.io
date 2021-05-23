@@ -130,6 +130,11 @@ canvas {
     background-position: 50% 50%;
 } 
 
+ion-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .ion {
     font-size: 30px;
     text-decoration: none;
@@ -445,14 +450,66 @@ canvas {
     content:'Less ▲';
 }
 
+.up-button {
+    border: 1px solid #398367;
+    box-shadow: 0 6px 10px #46584868, 0 0 6px #49604e65;
+    background-color: #48A684;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 75px; right: 40px;
+}
+
+.up-button:hover {
+    background-color: #2b7158;
+}
+
+.up-icon {
+    color: #fff;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
+    will-change: opacity, visibility;
+}
+   
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
+    will-change: opacity, visibility;
+}
+
 /* Footer */
 
-.copyright {
-    text-align: center;
-    padding: 30px;
+.footer-text {
+    font-size: 20px;
+    font-weight: bold;
     color: #FFF;
 }
 
+.copyright {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.footer-icon {
+    font-size: 20px;
+    color: #FFF;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: rgb(11, 66, 39);
+}
+
 footer {
+    padding: 20px 0px;
     background-color: #6ba791;
 }
