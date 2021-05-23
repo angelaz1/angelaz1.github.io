@@ -5,11 +5,11 @@
             "date": "Spring 2021",
             "description": "A CMU-themed racing game",
             "thumbnail": "assets/img/buggy/title.png",
-            "longDescription": "Bigger, Badder, Buggiere was a project for the 53-472 AGS course. The game is inspird by similar cartoon-y racing games like Mario Kart, but with a CMU twist! This project involved taking the original buggy game from last year (which encountered many setbacks due to COVID), and turning it into a complete and fun experience. We worked in a large interdisciplinary team of 6 over the course of the entire semster weeks. For this project, I worked primarily as a programmer for the CPU buggies, items, and UI.",
+            "longDescription": "Bigger, Badder, Buggiere was a project for the 53-472 AGS course. The game is inspird by similar cartoon-y racing games like Mario Kart, but with a CMU twist! This project involved taking the original buggy game from last year (which encountered many setbacks due to COVID), and turning it into a complete and fun experience.\n\n We worked in a large interdisciplinary team over the course of the entire semster. For this project, I worked primarily as a programmer for the CPU buggies, items, and UI.",
             "links": [
                 {
                     "link": "https://games.ideate.cmu.edu/biggerbadderbuggier/",
-                    "linkPretext": "You can learn more about the game and play it",
+                    "linkPretext": "You can learn more about the game and play it ",
                     "linkText": "here",
                     "linkPosttext": "!"
                 }

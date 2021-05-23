@@ -184,12 +184,12 @@ canvas {
     border: 5px solid #ddd;
     background-position: center;
     background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
 }
 
 .bio-circles #cmu-logo {
     width: 170px; height: 170px;
     top: 0%; left: 40%;
-    transform: translate(-50%, -50%);
     background-image: url('https://tinyurl.com/4z76cpu2');
     background-size: 160px 160px;
 }
@@ -197,7 +197,6 @@ canvas {
 .bio-circles #scs-logo {
     width: 130px; height: 130px;
     top: 30%; left: 75%;
-    transform: translate(-50%, -50%);
     background-image: url('https://tinyurl.com/n8unuy3k');
     background-size: 100px 100px;
 }
@@ -205,7 +204,6 @@ canvas {
 .bio-circles #honk-photo {
     width: 140px; height: 140px;
     top: 50%; left: 25%;
-    transform: translate(-50%, -50%);
     background-image: url('https://tinyurl.com/5xctd8uv');
     background-size: 130px 130px;
 }
@@ -213,7 +211,6 @@ canvas {
 .bio-circles #ta-logo {
     width: 180px; height: 180px;
     top: 80%; left: 60%;
-    transform: translate(-50%, -50%);
     background-image: url("../assets/img/bio/@.png");
     background-size: 170px 170px;
 }
@@ -246,9 +243,46 @@ canvas {
     text-align: center;
 }
 
+/* Currently Playing */
+
+.playing-picture {
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(121, 185, 148);
+    box-shadow: 0 6px 10px #9cc8a44b, 0 0 6px #9cc8a43e;
+}
+
+.playing-text {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.play-button {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.list-group-item {
+    padding-left: 0px;
+}
+
+.heart-icon {
+    font-size: 25px;
+    float: right;
+    vertical-align: middle;
+}
+
+.heart-button {
+    padding: 0px;
+    float: right;
+}
+
 /* Projects */
 
-.collapse-link:hover, .collapse-link:focus{
+.collapse-link:hover, .collapse-link:focus {
     text-decoration: none;
     outline: none;
     color: #fff;

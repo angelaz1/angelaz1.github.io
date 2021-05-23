@@ -17,7 +17,6 @@
         
         <!-- Stylesheets -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
-        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- Website Icon -->
@@ -42,15 +41,15 @@
                             <h5 class="card-text">CS Major | Game Design Minor | CMU | Class of 2022</h5>
                             <p>Excited to be interning with Microsoft for Summer 2021!</p>
                             <div class="row align-items-center">
-                                <div class="col-auto"><a href="https://github.com/angelaz1" target="_blank" rel="noopener noreferrer" class="ion ion-social-github"></a></div>
-                                <div class="col-auto"><a href="https://www.linkedin.com/in/angela-zhang122" target="_blank" rel="noopener noreferrer" class="ion ion-social-linkedin"></a></div>
-                                <div class="col-auto"><a href="mailto:angelaz1@andrew.cmu.edu" target="_blank" rel="noopener noreferrer" class="ion ion-android-mail"></a></div>
+                                <div class="col-auto"><a href="https://github.com/angelaz1" target="_blank" rel="noopener noreferrer" class="ion"><ion-icon name="logo-github"></ion-icon></a></div>
+                                <div class="col-auto"><a href="https://www.linkedin.com/in/angela-zhang122" target="_blank" rel="noopener noreferrer" class="ion"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+                                <div class="col-auto"><a href="mailto:angelaz1@andrew.cmu.edu" target="_blank" rel="noopener noreferrer" class="ion"><ion-icon name="logo-linkedin"></ion-icon></a></div>
                                 <div class="col-auto"><a class="btn btn-primary" href="assets/misc/resume.pdf" target="blank" role="button">Resume</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#about" class="ion-ios-arrow-down scroll-button"></a>
+                <a href="#about" class="scroll-button"><ion-icon name="chevron-down-outline"></ion-icon></a>
             </div>
         </section>
         
@@ -140,11 +139,68 @@
                     <div class="pt-4"><hr></div>
 
                     <div class="row mx-1 pb-5 pt-1">
-                        <div class="col-auto">
+                        <div class="col">
                             <div class="section-title fade-in">
-                                <h2><span class="text">Currently Playing</span></h2>
+                                <h2><span class="text">Now Playing</span></h2>
                             </div>
-                            <!-- TODO: Add in circles for games -->
+
+                            <div class="container now-playing pt-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col mb-3 text-center">
+                                        <img src="assets/img/p5r.png" class="playing-picture fade-in">
+                                        <div class="py-2"></div>
+                                        <span class="playing-text fade-in">Favorite Games in 2020</span>
+                                        <div class="py-2"></div>
+                                        <button type="button" class="btn btn-success fade-in" class="play-button" disabled>Playing</button>
+                                    </div>
+                                    <div class="col-9">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="pause-circle-outline" class="play-button"></ion-icon>
+                                                <span>Persona 5 Royal</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="play-circle-outline" class="play-button"></ion-icon>
+                                                <span>Zelda: Breath of the Wild</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="play-circle-outline" class="play-button"></ion-icon>
+                                                <span>The Sims 4</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="play-circle-outline" class="play-button"></ion-icon> 
+                                                <span>Stardew Valley</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="play-circle-outline" class="play-button"></ion-icon>
+                                                <span>Animal Crossing</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                            <li class="list-group-item fade-in">
+                                                <ion-icon name="play-circle-outline" class="play-button"></ion-icon>
+                                                <span>Slay the Spire</span>
+                                                <button class="btn heart-button" onclick="toggleHeart(this)">
+                                                    <ion-icon name="heart-outline" class="heart-icon like-game"></ion-icon>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -165,6 +221,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+        <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
+        <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
         <script src="js/index.js"></script>
         <script src="js/particles.js"></script>
     </body>

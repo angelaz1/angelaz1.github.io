@@ -53,6 +53,9 @@ window.onscroll = function() {
 
 /** Fading Functions */
 
+/**
+ * When document loads, fade in all items currently on the screen
+ */
 $(document).ready(function () {
   $('.fade-in').each(function(index) {
       var top_of_element = $(this).offset().top;
@@ -68,6 +71,9 @@ $(document).ready(function () {
   });
 })
 
+/**
+ * While scrolling, fade in every item that comes into view
+ */
 $(window).scroll(function() {
   $('.fade-in').each(function() {
       var top_of_element = $(this).offset().top;
@@ -80,3 +86,20 @@ $(window).scroll(function() {
       }
   });
 });
+
+
+/** Misc. Functions */
+
+/** 
+ * Toggles heart icon when clicked
+ * @param {object} heartButton button that was clicked
+ */
+function toggleHeart(heartButton) {
+  let heartElem = heartButton.children[0];
+  let attribute = heartElem.getAttribute('name');
+  if (attribute == "heart") {
+    heartElem.setAttribute("name", "heart-outline");  
+  } else {
+    heartElem.setAttribute("name", "heart");
+  }
+}
