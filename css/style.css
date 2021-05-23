@@ -23,8 +23,16 @@ html, body {
 main {
     background: #fff;
 }
-.main-section {
-    padding: 20px 100px;
+
+@media (max-width: 992px) {
+    .main-section {
+        padding: 20px 20px;
+    }
+}
+@media (min-width: 992px) {
+    .main-section {
+        padding: 20px 100px;
+    }
 }
 
 .fade-in {
@@ -75,7 +83,7 @@ main {
 }
 
 .intro {
-    padding-left: 105px;
+    padding-left: 100px;
     padding-right: 10px;
     padding-top: 60px;
     padding-bottom: 10px;
@@ -93,7 +101,9 @@ main {
 .my-description {
     margin-left: 90px;
     margin-right: 10px;
+    padding-bottom: 5px;
 } 
+
 .name {
     color: #48A684;
 }
@@ -122,15 +132,18 @@ canvas {
 
 .ion {
     font-size: 30px;
-    width: 30px;
-    text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
     color: #48A684;
 }
 
 .ion:hover, .scroll-button:hover  {
     color: #2b7158;
+}
+
+.btn-primary {
+    vertical-align: middle;
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:visited {
@@ -273,11 +286,18 @@ canvas {
     font-size: 25px;
     float: right;
     vertical-align: middle;
+    color: rgb(226, 64, 131);
 }
 
 .heart-button {
     padding: 0px;
+    vertical-align: middle;
     float: right;
+}
+
+.playing-button {
+    background-color: rgb(155, 189, 171);
+    color: rgb(255, 255, 255);
 }
 
 /* Projects */
