@@ -19,11 +19,11 @@
                 {"path": "assets/img/meme/avatar.png"}
             ], 
             "skills": [
-                {"name": "Video Editing"},
-                {"name": "Music Arrangement"},
-                {"name": "Piano"},
-                {"name": "Flute"},
-                {"name": "Fun!"}
+                {"name": "Video Editing", "other": true},
+                {"name": "Music Arrangement", "other": true},
+                {"name": "Piano", "other": true},
+                {"name": "Flute", "other": true},
+                {"name": "Fun!", "other": true}
             ]
         },
         {
@@ -48,13 +48,14 @@
                 {"path": "assets/img/shabu/campfire.png"}
             ], 
             "skills": [
-                {"name": "3D Modeling"},
-                {"name": "Character Design"},
-                {"name": "Animation"},
-                {"name": "Rigging"},
-                {"name": "Storyboarding"},
-                {"name": "Video Editing"},
-                {"name": "SFX/BGM"}
+                {"name": "Autodesk Maya", "software": true},
+                {"name": "GarageBand", "software": true},
+                {"name": "DaVinci Resolve", "software": true},
+                {"name": "3D Modeling", "other": true},
+                {"name": "Animation", "other": true},
+                {"name": "Rigging", "other": true},
+                {"name": "Video Editing", "other": true},
+                {"name": "SFX/BGM", "other": true}
             ]
         }
     ]

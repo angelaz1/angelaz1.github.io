@@ -19,8 +19,8 @@
                 {"path": "assets/img/vscode-extension/autocomplete.png"}
             ], 
             "skills": [
-                {"name": "TypeScript"},
-                {"name": "VSCode"}
+                {"name": "TypeScript", "language": true},
+                {"name": "VSCode", "software": true}
             ]
         },
         {
@@ -39,10 +39,10 @@
             ],
             "images": [], 
             "skills": [
-                {"name": "Node.js"},
-                {"name": "EJS"},
-                {"name": "MySQL"},
-                {"name": "HTML"}
+                {"name": "Node.js", "language": true},
+                {"name": "EJS", "language": true},
+                {"name": "MySQL", "language": true},
+                {"name": "HTML", "language": true}
             ]
         },
         {
@@ -70,12 +70,11 @@
                 {"path": "assets/img/osu/chat.png"}
             ], 
             "skills": [
-                {"name": "Academic"},
-                {"name": "C#"},
-                {"name": ".NET Framework"},
-                {"name": "Programming"},
-                {"name": "UI/UX"},
-                {"name": "PHP"}
+                {"name": "C#", "language": true},
+                {"name": ".NET Framework", "language": true},
+                {"name": "PHP", "language": true},
+                {"name": "Programming", "other": true},
+                {"name": "UI/UX", "other": true}
             ]
         }
     ]

@@ -20,12 +20,12 @@
                 {"path": "assets/img/buggy/racing.png"}
             ], 
             "skills": [
-                {"name": "Unity"},
-                {"name": "C#"},
-                {"name": "Programming"},
-                {"name": "UI/UX"},
-                {"name": "Game Design"},
-                {"name": "AI/CPUs"}
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "UI/UX", "other": true},
+                {"name": "Game Design", "other": true},
+                {"name": "AI/CPUs", "other": true}
             ]
         },
         {
@@ -47,12 +47,12 @@
                 {"path": "assets/img/perspective/demo.gif"}
             ], 
             "skills": [
-                {"name": "Unity"},
-                {"name": "C#"},
-                {"name": "Autodesk Mayan"},
-                {"name": "3D Modeling"},
-                {"name": "Photoshop"},
-                {"name": "2D Art"}
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Autodesk Maya", "software": true},
+                {"name": "Photoshop", "software": true},
+                {"name": "3D Modeling", "other": true},
+                {"name": "2D Art", "other": true}
             ]
         },
         {
@@ -76,13 +76,13 @@
                 {"path": "assets/img/olympians/ares.png"}
             ], 
             "skills": [
-                {"name": "Unity"},
-                {"name": "C#"},
-                {"name": "Programming"},
-                {"name": "UI/UX"},
-                {"name": "Photoshop"},
-                {"name": "2D Art"},
-                {"name": "Sound Design"}
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Photoshop", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "UI/UX", "other": true},
+                {"name": "2D Art", "other": true},
+                {"name": "Sound Design", "other": true}
             ]
         },
         {
@@ -105,13 +105,13 @@
                 {"path": "assets/img/keys/battle.png"}
             ], 
             "skills": [
-                {"name": "Unity"},
-                {"name": "UI/UX"},
-                {"name": "Photoshop"},
-                {"name": "2D Art"},
-                {"name": "Sound Design"},
-                {"name": "C#"},
-                {"name": "Programming"}
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Photoshop", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "UI/UX", "other": true},
+                {"name": "2D Art", "other": true},
+                {"name": "Sound Design", "other": true}
             ]
         },
         {
@@ -134,13 +134,13 @@
                 {"path": "assets/img/fowl/game.png"}
             ], 
             "skills": [
-                {"name": "Unity"},
-                {"name": "C#"},
-                {"name": "Programming"},
-                {"name": "UI/UX"},
-                {"name": "Photoshop"},
-                {"name": "2D Art"},
-                {"name": "Sound Design"}
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Photoshop", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "UI/UX", "other": true},
+                {"name": "2D Art", "other": true},
+                {"name": "Sound Design", "other": true}
             ]
         }
     ]
