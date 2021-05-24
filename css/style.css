@@ -232,6 +232,45 @@ ion-icon {
     background-image: url("../assets/img/bio/@.png");
     background-size: 170px 170px;
 }
+
+/* Skills */
+
+.skill-key {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    display: inline;
+    margin-bottom: 10px;
+    line-height: 300%;
+    white-space: nowrap;
+}
+
+.skill-key-wrapper {
+    transition: transform 250ms;
+}
+
+.skill-key-wrapper:hover {
+    transform: translateY(-10px);
+}
+
+.skill-keys .coding, .skills .coding {
+    background: #10564173;
+}
+
+.skill-keys .software, .skills .software {
+    background: #103a5673;
+}
+
+.skill-keys .soft, .skills .soft {
+    background: #11105673;
+}
+
+.skills {
+    padding-top: 10px;
+    text-align: center;
+}
+
 .skill {
     color: #fff;
     padding: 10px;
@@ -240,25 +279,12 @@ ion-icon {
     margin-bottom: 10px;
     line-height: 300%;
     white-space: nowrap;
+    opacity: 1;
+    transition: opacity 250ms;
 }
 
-/* Skills */
-
-.skills .coding {
-    background: #10564173;
-}
-
-.skills .software {
-    background: #103a5673;
-}
-
-.skills .soft {
-    background: #11105673;
-}
-
-.skills {
-    padding-top: 10px;
-    text-align: center;
+.skill.faded {
+    opacity: 0.4;
 }
 
 /* Currently Playing */
@@ -467,14 +493,14 @@ ion-icon {
     color: #fff;
 }
 
-.show {
+.show-anim {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
     will-change: opacity, visibility;
 }
    
-.hide {
+.hide-anim {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease-out, visibility 0.2s ease-out;

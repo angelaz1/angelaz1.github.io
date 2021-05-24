@@ -35,11 +35,11 @@ const scrollFunc = () => {
   let y = window.scrollY;
   
   if (y > 200) {
-    upButton.classList.add('show');
-    upButton.classList.remove('hide');
+    upButton.classList.add('show-anim');
+    upButton.classList.remove('hide-anim');
   } else {
-    upButton.classList.remove('show');
-    upButton.classList.add('hide');
+    upButton.classList.remove('show-anim');
+    upButton.classList.add('hide-anim');
   }
 };
 

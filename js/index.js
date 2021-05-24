@@ -111,3 +111,31 @@ function toggleHeart(heartButton) {
     heartElem.setAttribute("name", "heart");
   }
 }
+
+/** 
+ * Toggles animation on skills hover
+ */
+$(".skill-key-wrapper").hover(function(){
+  $('.skill').each(function() {
+    $(this).addClass('faded');
+  });
+});
+
+$('.skill-key-wrapper').on({
+  mouseenter: function() {
+    let skillKeyType = $(this).find('div.skill-key').attr('class').split(/\s+/)[1];
+
+    $('.skill').each(function() {
+      let skillType = $(this).attr('class').split(/\s+/)[1];
+
+      if (skillKeyType == skillType) $(this).removeClass('faded');
+      else $(this).addClass('faded');
+    });
+  },
+  
+  mouseleave: function() {
+    $('.skill').each(function() {
+      $(this).removeClass('faded');
+    });
+  }
+});
