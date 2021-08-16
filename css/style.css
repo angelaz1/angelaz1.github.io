@@ -21,7 +21,7 @@ html, body {
 }
 
 main {
-    background: #fff;
+    background: rgb(255, 255, 255);
 }
 
 @media (max-width: 992px) {
@@ -82,6 +82,12 @@ main {
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
+.intro:before {
+    content: ''; position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.3);
+}
+
 .intro {
     padding-left: 100px;
     padding-right: 10px;
@@ -100,7 +106,7 @@ main {
 
 .my-description {
     margin-left: 90px;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-bottom: 5px;
 } 
 
@@ -208,21 +214,21 @@ ion-icon {
 .bio-circles #cmu-logo {
     width: 170px; height: 170px;
     top: 0%; left: 40%;
-    background-image: url('https://tinyurl.com/4z76cpu2');
+    background-image: url('../assets/img/bio/cmu.png');
     background-size: 160px 160px;
 }
 
 .bio-circles #scs-logo {
     width: 130px; height: 130px;
     top: 30%; left: 75%;
-    background-image: url('https://tinyurl.com/n8unuy3k');
+    background-image: url('../assets/img/bio/scs.gif');
     background-size: 100px 100px;
 }
 
 .bio-circles #honk-photo {
     width: 140px; height: 140px;
     top: 50%; left: 25%;
-    background-image: url('https://tinyurl.com/5xctd8uv');
+    background-image: url('../assets/img/bio/honk.jpg');
     background-size: 130px 130px;
 }
 
@@ -456,6 +462,10 @@ ion-icon {
 
 .timeline-header {
     text-align: center;
+}
+
+.text-success-muted {
+    color: #4c816e;
 }
 
 .show-button.btn.collapsed:before {

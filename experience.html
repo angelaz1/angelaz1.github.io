@@ -113,8 +113,9 @@
                     <div class="card {{#current}}border-success fade-in{{/current}} shadow">
                         <div class="card-body">
                             <h5 class="card-title {{#current}}text-success{{/current}}"><b>{{title}}</b></h5>
+                            <h6 class="{{#current}}text-success-muted{{/current}} {{^current}}text-muted{{/current}}"><b>{{subdescription}}</b></h6>
                             {{#dates}}
-                            <p class="{{#current}}text-success{{/current}} {{^current}}text-muted{{/current}}">{{dates}}</p>
+                            <p class="{{#current}}text-success-muted{{/current}} {{^current}}text-muted{{/current}}">{{dates}}</p>
                             {{/dates}}
 
                             {{#classes}}
