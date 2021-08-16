@@ -120,7 +120,7 @@
 
                             {{#classes}}
                                 <p class="card-text">
-                                    <ul>
+                                    <ul class="experience-list">
                                         {{#main}}
                                         <li>{{number}} {{name}}</li>
                                         {{/main}}
@@ -143,9 +143,9 @@
                             {{#expDescriptions.length}}
                                 <p class="card-text">
                                     <div class="collapse" id="more{{shortName}}">
-                                        <ul>
+                                        <ul class="experience-list">
                                             {{#expDescriptions}}
-                                            <li style="margin: 10px 0;">{{description}}</li>
+                                            <li>{{description}}</li>
                                             {{/expDescriptions}}
                                         </ul>
                                     </div>

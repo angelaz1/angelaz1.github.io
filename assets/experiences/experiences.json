@@ -19,6 +19,7 @@
         {
                 "title": "15-122 Teaching Assistant",
                 "shortName": "122TA",
+                "subdescription": "Carnegie Mellon University",
                 "dates": "Jan 2019 - May 2020",
                 "expDescriptions": [
                     {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
@@ -44,6 +45,7 @@
         {
             "title": "SeisWave Summer Intern",
             "shortName": "SeiswaveS19",
+            "subdescription": "Research & Development Team",
             "dates": "Jun 2019 - Aug 2019",
             "expDescriptions": [
                 {"description": "Worked closely with seismic data and learned about performing NMO-correction with CDP-offset gathers"},
@@ -84,6 +86,7 @@
         {
             "title": "15-122 Lead Teaching Assistant",
             "shortName": "122LeadTA",
+            "subdescription": "Carnegie Mellon University",
             "dates": "May 2020 - Present",
             "expDescriptions": [
                 {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
@@ -142,6 +145,10 @@
             "shortName": "MicrosoftS21",
             "subdescription": "Xbox PlayFab Player Services Team",
             "dates": "Jun 2021 - Aug 2021",
+            "expDescriptions": [
+                {"description": "Designed and implemented an IP Geolocation Kubernetes service for the PlayFab Login API along with an automated database updater Github Action"},
+                {"description": "Worked extensively with Kubernetes, Terraform, FluxCD and Azure Resources to integrate service into existing clusters and create a shareable package for the Azure team"}
+            ],
             "current": true
         },
         {

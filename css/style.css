@@ -88,27 +88,48 @@ main {
     background: rgba(0,0,0,0.3);
 }
 
-.intro {
-    padding-left: 100px;
-    padding-right: 10px;
-    padding-top: 60px;
-    padding-bottom: 10px;
-}
+@media (max-width: 574px) {
+    .profile {
+        position: absolute;
+        visibility: hidden;
+    }
 
-.profile {
-    border: 5px solid rgb(255, 255, 255);
-    width: 200px;
-    position: absolute;
-    left: 0; top: 0;
-    transform: translate(-50%,-30%);
-    z-index: 10;
-}
+    .intro {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
 
-.my-description {
-    margin-left: 90px;
-    margin-right: 20px;
-    padding-bottom: 5px;
-} 
+    .my-description {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-bottom: 5px;
+    } 
+}
+@media (min-width: 574px) {
+    .profile {
+        border: 5px solid rgb(255, 255, 255);
+        width: 200px;
+        position: absolute;
+        left: 0; top: 0;
+        transform: translate(-50%,-30%);
+        z-index: 10;
+    }
+    
+    .intro {
+        padding-left: 100px;
+        padding-right: 10px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+    .my-description {
+        margin-left: 90px;
+        margin-right: 10px;
+        padding-bottom: 5px;
+    }
+}
 
 .name {
     color: #48A684;
@@ -515,6 +536,23 @@ ion-icon {
     opacity: 0;
     transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
     will-change: opacity, visibility;
+}
+
+.experience-list {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 25px;
+    list-style: none;
+}
+
+.experience-list li::before {
+    background-color: rgb(84, 132, 103);
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    height: 6px;
+    width: 6px;
 }
 
 /* Footer */
