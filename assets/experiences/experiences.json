@@ -1,110 +1,65 @@
 {
     "cards": [
         {
-            "title": "Fall 2018 Courses",
-            "shortName": "F18",
-            "subdescription": "First-Year Undergraduate",
+            "title": "Spring 2022 Courses",
+            "subdescription": "Fourth-Year Undergraduate",
+            "shortName": "S22",
             "classes": {
                 "main": [
-                    {"number": "15-122", "name": "Principles of Imperative Computation"},
-                    {"number": "15-151", "name": "Mathematical Foundations for Computer Science"},
-                    {"number": "21-241", "name": "Matrices and Linear Transformations"}
+                    {"number": "15-426", "name": "Computer Graphics"},
+                    {"number": "17-413", "name": "Software Engineering Practicum"},
+                    {"number": "17-437", "name": "Web Application Development"}
                 ],
                 "other": [
-                    {"number": "73-103", "name": "Principles of Macroeconomics"},
-                    {"number": "85-102", "name": "Introuction to Psychology"}
+                    {"number": "05-418", "name": "Design Educational Games"},
+                    {"number": "xx-xxx", "name": "Undecided"}
                 ]
-            }
+            },
+            "current": true
         },
         {
-                "title": "15-122 Teaching Assistant",
-                "shortName": "122TA",
-                "subdescription": "Carnegie Mellon University",
-                "dates": "Jan 2019 - May 2020",
-                "expDescriptions": [
-                    {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
-                    {"description": "Directly responsible for teaching labs and recitations, holding office hours, and leading weekly grading groups"}
-                ]
-        },
-        {
-            "title": "Spring 2019 Courses",
-            "shortName": "S19",
-            "subdescription": "First-Year Undergraduate",
+            "title": "Fall 2021 Courses",
+            "subdescription": "First-Year Masters",
+            "shortName": "F21",
             "classes": {
                 "main": [
-                    {"number": "15-150", "name": "Principles of Functional Programming"},
-                    {"number": "15-251", "name": "Great Ideas in Theoretical Computer Science"}
+                    {"number": "53-831", "name": "Building Virtual Worlds"},
+                    {"number": "53-608", "name": "Visual Story"}
                 ],
                 "other": [
-                    {"number": "33-114", "name": "Physics of Musical Sound"},
-                    {"number": "76-101", "name": "Interpretation and Argument"},
-                    {"number": "82-278", "name": "Japanese Film and Literature"}
+                    {"number": "53-711", "name": "Improvisational Acting"},
+                    {"number": "53-700", "name": "ETC Fundamentals"}
                 ]
-            }
-        },
-        {
-            "title": "SeisWave Summer Intern",
-            "shortName": "SeiswaveS19",
-            "subdescription": "Research & Development Team",
-            "dates": "Jun 2019 - Aug 2019",
-            "expDescriptions": [
-                {"description": "Worked closely with seismic data and learned about performing NMO-correction with CDP-offset gathers"},
-                {"description": "Developed model-building algorithms in C to automate velocity picking with seismic data, improving accuracy and efficiency from industry-standard methods"}
-            ]
-        },
-        {
-            "title": "Fall 2019 Courses",
-            "shortName": "F19",
-            "subdescription": "Second-Year Undergraduate",
-            "classes": {
-                "main": [
-                    {"number": "15-210", "name": "Parallel and Sequential Data Structures and Algorithms"},
-                    {"number": "17-214", "name": "Principles of Software Construction"},
-                    {"number": "21-259", "name": "Calculus in 3D"}
-                ],
-                "other": [
-                    {"number": "15-322", "name": "Introduction to Computer Music"},
-                    {"number": "82-171", "name": "Elementary Japanese"}
-                ]
-            }
-        },
-        {
-            "title": "Spring 2020 Courses",
-            "shortName": "S20",
-            "subdescription": "Second-Year Undergraduate",
-            "classes": {
-                "main": [
-                    {"number": "15-213", "name": "Introduction to Computer Systems"},
-                    {"number": "53-471", "name": "Game Design, Prototyping, and Production"},
-                    {"number": "15-259", "name": "Probability and Computing"}
-                ],
-                "other": [
-                    {"number": "76-270", "name": "Writing for the Professions"}
-                ]
-            }
-        },
-        {
-            "title": "15-122 Lead Teaching Assistant",
-            "shortName": "122LeadTA",
-            "subdescription": "Carnegie Mellon University",
-            "dates": "May 2020 - Present",
-            "expDescriptions": [
-                {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
-                {"description": "Directly responsible for teaching labs and recitations, holding office hours, leading weekly grading groups"},
-                {"description": "Works closely with course instructors to improve the course, including planning for transition to remote learning and improving course materials"}
-            ],
+            },
             "current": true
         },
         {
             "title": "Microsoft SWE Summer Intern",
-            "shortName": "MicrosoftS20",
-            "subdescription": "Xbox PlayFab Data Services Team",
-            "dates": "Jun 2020 - Aug 2020",
+            "shortName": "MicrosoftS21",
+            "subdescription": "Xbox PlayFab Player Services Team",
+            "dates": "Jun 2021 - Aug 2021",
             "expDescriptions": [
-                {"description": "Worked directly with PlayFab, a open-source backend service for game developers hosting 2.5 billion player accounts for over 5000 games"},
-                {"description": "Designed and implemented a data migration metadata class to assist with PlayFab's large-scale data migration"}
+                {"description": "Designed and implemented an IP Geolocation Kubernetes service for the PlayFab Login API along with an automated database updater Github Action"},
+                {"description": "Worked extensively with Kubernetes, Terraform, FluxCD and Azure Resources to integrate service into existing clusters and create a shareable package for the Azure team"}
             ],
             "current": true
+        },
+        {
+            "title": "Spring 2021 Courses",
+            "shortName": "S21",
+            "subdescription": "Third-Year Undergraduate",
+            "classes": {
+                "main": [
+                    {"number": "15-451", "name": "Algorithm Design and Analysis"},
+                    {"number": "53-472", "name": "Advanced Game Studio"},
+                    {"number": "15-281", "name": "AI Representation and Problem Solving"}
+                ],
+                "other": [
+                    {"number": "60-125", "name": "Introduction to 3D Animation Pipeline"},
+                    {"number": "33-120", "name": "Science and Science Fiction"}
+                ]
+            },
+            "current": false
         },
         {
             "title": "Fall 2020 Courses",
@@ -124,48 +79,110 @@
             "current": false
         },
         {
-            "title": "Spring 2021 Courses",
-            "shortName": "S21",
-            "subdescription": "Third-Year Undergraduate",
-            "classes": {
-                "main": [
-                    {"number": "15-451", "name": "Algorithm Design and Analysis"},
-                    {"number": "53-472", "name": "Advanced Game Studio"},
-                    {"number": "15-281", "name": "AI Representation and Problem Solving"}
-                ],
-                "other": [
-                    {"number": "60-125", "name": "Introduction to 3D Animation Pipeline"},
-                    {"number": "33-120", "name": "Science and Science Fiction"}
-                ]
-            },
-            "current": true
-        },
-        {
             "title": "Microsoft SWE Summer Intern",
-            "shortName": "MicrosoftS21",
-            "subdescription": "Xbox PlayFab Player Services Team",
-            "dates": "Jun 2021 - Aug 2021",
+            "shortName": "MicrosoftS20",
+            "subdescription": "Xbox PlayFab Data Services Team",
+            "dates": "Jun 2020 - Aug 2020",
             "expDescriptions": [
-                {"description": "Designed and implemented an IP Geolocation Kubernetes service for the PlayFab Login API along with an automated database updater Github Action"},
-                {"description": "Worked extensively with Kubernetes, Terraform, FluxCD and Azure Resources to integrate service into existing clusters and create a shareable package for the Azure team"}
+                {"description": "Worked directly with PlayFab, a open-source backend service for game developers hosting 2.5 billion player accounts for over 5000 games"},
+                {"description": "Designed and implemented a data migration metadata class to assist with PlayFab's large-scale data migration"}
             ],
             "current": true
         },
         {
-            "title": "Fall 2021 Courses",
-            "subdescription": "First-Year Masters",
-            "shortName": "F21",
+            "title": "15-122 Lead Teaching Assistant",
+            "shortName": "122LeadTA",
+            "subdescription": "Carnegie Mellon University",
+            "dates": "May 2020 - Present",
+            "expDescriptions": [
+                {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
+                {"description": "Directly responsible for teaching labs and recitations, holding office hours, leading weekly grading groups"},
+                {"description": "Works closely with course instructors to improve the course, including planning for transition to remote learning and improving course materials"}
+            ],
+            "current": true
+        },
+        {
+            "title": "Spring 2020 Courses",
+            "shortName": "S20",
+            "subdescription": "Second-Year Undergraduate",
             "classes": {
                 "main": [
-                    {"number": "53-831", "name": "Building Virtual Worlds"},
-                    {"number": "53-608", "name": "Visual Story"}
+                    {"number": "15-213", "name": "Introduction to Computer Systems"},
+                    {"number": "53-471", "name": "Game Design, Prototyping, and Production"},
+                    {"number": "15-259", "name": "Probability and Computing"}
                 ],
                 "other": [
-                    {"number": "53-711", "name": "Improvisational Acting"},
-                    {"number": "53-700", "name": "ETC Fundamentals"}
+                    {"number": "76-270", "name": "Writing for the Professions"}
                 ]
-            },
-            "current": true
+            }
+        },
+        {
+            "title": "Fall 2019 Courses",
+            "shortName": "F19",
+            "subdescription": "Second-Year Undergraduate",
+            "classes": {
+                "main": [
+                    {"number": "15-210", "name": "Parallel and Sequential Data Structures and Algorithms"},
+                    {"number": "17-214", "name": "Principles of Software Construction"},
+                    {"number": "21-259", "name": "Calculus in 3D"}
+                ],
+                "other": [
+                    {"number": "15-322", "name": "Introduction to Computer Music"},
+                    {"number": "82-171", "name": "Elementary Japanese"}
+                ]
+            }
+        },
+        {
+            "title": "SeisWave Summer Intern",
+            "shortName": "SeiswaveS19",
+            "subdescription": "Research & Development Team",
+            "dates": "Jun 2019 - Aug 2019",
+            "expDescriptions": [
+                {"description": "Worked closely with seismic data and learned about performing NMO-correction with CDP-offset gathers"},
+                {"description": "Developed model-building algorithms in C to automate velocity picking with seismic data, improving accuracy and efficiency from industry-standard methods"}
+            ]
+        },
+        {
+            "title": "Spring 2019 Courses",
+            "shortName": "S19",
+            "subdescription": "First-Year Undergraduate",
+            "classes": {
+                "main": [
+                    {"number": "15-150", "name": "Principles of Functional Programming"},
+                    {"number": "15-251", "name": "Great Ideas in Theoretical Computer Science"}
+                ],
+                "other": [
+                    {"number": "33-114", "name": "Physics of Musical Sound"},
+                    {"number": "76-101", "name": "Interpretation and Argument"},
+                    {"number": "82-278", "name": "Japanese Film and Literature"}
+                ]
+            }
+        },
+        {
+            "title": "15-122 Teaching Assistant",
+            "shortName": "122TA",
+            "subdescription": "Carnegie Mellon University",
+            "dates": "Jan 2019 - May 2020",
+            "expDescriptions": [
+                {"description": "Teaches an introductory algorithms and data structures course in C0/C consisting of ~450 students each semester"},
+                {"description": "Directly responsible for teaching labs and recitations, holding office hours, and leading weekly grading groups"}
+            ]
+        },
+        {
+            "title": "Fall 2018 Courses",
+            "shortName": "F18",
+            "subdescription": "First-Year Undergraduate",
+            "classes": {
+                "main": [
+                    {"number": "15-122", "name": "Principles of Imperative Computation"},
+                    {"number": "15-151", "name": "Mathematical Foundations for Computer Science"},
+                    {"number": "21-241", "name": "Matrices and Linear Transformations"}
+                ],
+                "other": [
+                    {"number": "73-103", "name": "Principles of Macroeconomics"},
+                    {"number": "85-102", "name": "Introuction to Psychology"}
+                ]
+            }
         }
     ]
 }

@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Angela Zhang</title>
-
-        <!-- Keywords in the website -->
-        <meta name="keywords" content="Software Developer, Software Engineer, 
-        Computer Science, Carnegie Mellon University, CMU, Game Design">
-
-        <!-- Website description -->
-        <meta name="description" content="Personal website for Angela Zhang - CS Major at CMU, Class of 2022">
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        
-        <!-- Stylesheets -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
-        <!-- Website Icon -->
-        <link rel="icon" href="assets/img/az.png">    
+        <div id="header-placeholder"></div>
     </head>
 
     <body id="page-top">
@@ -39,6 +20,20 @@
                 </div>
 
                 <div id="project-accordion">
+                    <!-- Game Projects -->
+                    <div class="card collapse-card">
+                        <div class="card-header collapse-card-header fade-in" id="projects-game" style="transform: rotate(0);">
+                            <h4>
+                                <a href="#" class="stretched-link collapse-link" data-toggle="collapse" data-target="#gameProjects">
+                                    Game Projects
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="gameProjects" class="collapse project show" aria-labelledby="gameProjects" data-parent="#project-accordion">
+                            <div id="game-projects"></div>
+                        </div>
+                    </div>
+                    
                     <!-- Software Projects -->
                     <div class="card collapse-card">
                         <div class="card-header collapse-card-header fade-in" id="projects-software" style="transform: rotate(0);">
@@ -53,19 +48,6 @@
                         </div>
                     </div>
 
-                    <!-- Game Projects -->
-                    <div class="card collapse-card">
-                        <div class="card-header collapse-card-header fade-in" id="projects-game" style="transform: rotate(0);">
-                            <h4>
-                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#gameProjects">
-                                    Game Projects
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="gameProjects" class="collapse project" aria-labelledby="gameProjects" data-parent="#project-accordion">
-                            <div id="game-projects"></div>
-                        </div>
-                    </div>
 
                     <!-- Class Projects -->
                     <div class="card collapse-card">
@@ -105,16 +87,17 @@
         <div id="footer-placeholder"></div>
 
          <!-- Javascript -->
-         <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
-         <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+        <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
         <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
-         <script src="js/index.js"></script>
-         <script src="js/projects.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/projects.js"></script>
 
         <script>
+            $(function(){$("#header-placeholder").load("header.html");});
             $(function(){$("#nav-placeholder").load("nav.html");});
             $(function(){$("#footer-placeholder").load("footer.html");});
         </script>

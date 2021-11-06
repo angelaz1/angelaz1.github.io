@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Angela Zhang</title>
-
-        <!-- Keywords in the website -->
-        <meta name="keywords" content="Software Developer, Software Engineer, 
-        Computer Science, Carnegie Mellon University, CMU, Game Design">
-
-        <!-- Website description -->
-        <meta name="description" content="Personal website for Angela Zhang - CS Major at CMU, Class of 2022">
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        
-        <!-- Stylesheets -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
-        <!-- Website Icon -->
-        <link rel="icon" href="assets/img/az.png">    
+        <div id="header-placeholder"></div>
     </head>
 
     <body id="page-top">
@@ -52,10 +33,10 @@
                         <div class="col-sm timeline-header fade-in"> <h3>Work Experiences</h3> </div>
                     </div>
                     <hr>
-                    <div class="row no-gutters">
-                        <button class="btn btn-lg mb-3 mx-auto show-button collapsed btn-outline-secondary" type="button" data-target=".pastExperiences" data-toggle="collapse"></button>
-                    </div>
                     <div id="experiences"></div>
+                    <div class="row no-gutters">
+                        <button class="btn btn-lg mt-3 mx-auto show-button collapsed btn-outline-secondary" type="button" data-target=".pastExperiences" data-toggle="collapse"></button>
+                    </div>
                 </div>
             </section> 
             <a id="up-button" class="btn btn-lg up-button hide-anim" href="#page-top"><ion-icon name="chevron-up-outline" class="up-icon"></ion-icon></a>
@@ -78,6 +59,7 @@
         <script src="js/experiences.js"></script>
 
         <script>
+            $(function(){$("#header-placeholder").load("header.html");});
             $(function(){$("#nav-placeholder").load("nav.html");});
             $(function(){$("#footer-placeholder").load("footer.html");});
         </script>
