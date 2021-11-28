@@ -141,8 +141,8 @@
             "thumbnail": "assets/img/fowl/title.png",
             "role": "Gameplay + UI Programmer, UI Artist, Sound Designer",
             "platform": "HTML5 Game made in Unity for two handheld controllers",
-            "devTime": "Two Weeks",
-            "teamSize": "1 Producer + 3 Programmers + 1 Artist",
+            "devTime": "Three Weeks",
+            "teamSize": "1 Producer + 3 Programmers + 2 Artists",
             "briefDescription": "A multiplayer basketball game about cheating birds",
             "longDescription": "Fowl Play was a project for the 53-471 GDPP course. This project had the theme of remaking an existing game - in this case, basketball. We created Fowl Play based on the idea of cheating birds playing 1v1's. We worked in interdisciplinary teams of 6 over the course of three weeks. For this project, I worked primarily as a 2D artist, UI programmer, and backup sound designer.",
             "links": [
