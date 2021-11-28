@@ -5,6 +5,10 @@
             "date": "Summer 2020",
             "description": "A collaborative music project done with Microsoft Interns and FTEs",
             "thumbnail": "assets/img/meme/phantom.png",
+            "role": "Pianist, Flustist, Music Arranger, and Video Editor",
+            "platform": "YouTube videos; Music arranged in MuseScore; Audio Mixed in GarageBand; Video Edited in DaVinci Resolve",
+            "devTime": "Two Months",
+            "briefDescription": "A collaborative music project done with Microsoft Interns and FTEs",
             "longDescription": "M.E.M.E. (standing for Microsoft Engineers Music Ensemble) was a summer project conducted with ~40 Microsoft interns and full-time employees. The project consisted of arranging, recording, and editing songs for three virtual performances over the course of a summer internship.",
             "links": [
                 {
@@ -19,11 +23,13 @@
                 {"path": "assets/img/meme/avatar.png"}
             ], 
             "skills": [
+                {"name": "MuseScore", "software": true},
+                {"name": "GarageBand", "software": true},
+                {"name": "DaVinci Resolve", "software": true},
                 {"name": "Video Editing", "other": true},
                 {"name": "Music Arrangement", "other": true},
                 {"name": "Piano", "other": true},
-                {"name": "Flute", "other": true},
-                {"name": "Fun!", "other": true}
+                {"name": "Flute", "other": true}
             ]
         },
         {
@@ -31,6 +37,10 @@
             "date": "Spring 2021",
             "description": "A short 3D animation about Shabu the Hotpot",
             "thumbnail": "assets/img/shabu/forest.png",
+            "role": "3D Artist, Rigger, Animator",
+            "platform": "3D Animation created in Maya",
+            "devTime": "One Semester",
+            "briefDescription": "A short 3D animation about Shabu the Hotpot",
             "longDescription": "This animation was created the 60-125 Intro to 3D Animation course. Over the course of a semester, I designed, modeled, textured, rigged, and animated Shabu, a hotpot character residing in a snowy forest. The final result was a 30-second animated short of our character. This was my first time extensively workinng with Maya on a full character animation (my previous work with 3D animation have been very basic), and I really enjoyed the class!",
             "links": [
                 {

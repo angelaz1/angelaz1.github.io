@@ -5,6 +5,9 @@
             "date": "Winter 2019",
             "description": "A VSCode Extension made for 15-122",
             "thumbnail": "assets/img/vscode-extension/extension-page.png",
+            "role": "Programmer for Regex/Syntax Highlighting and Color Themes",
+            "platform": "VSCode Extension",
+            "briefDescription": "A VSCode Extension made for 15-122, an introductory CS class at CMU",
             "longDescription": "As part of transitioning the 15-122 course to supporting the modern text editor VSCode, a group of TAs worked together to create an extension that enabled autocompletion, syntax highlighting, static type-checking, and more. This helped hundreds of students each semester with learning and coding in the new language C0.",
             "links": [
                 {
@@ -28,11 +31,20 @@
             "date": "Winter 2020",
             "description": "Adding features to the 15-122 Office Hours queue website",
             "thumbnail": "assets/img/queue/queue.png",
+            "role": "Programmer",
+            "platform": "HTML website using Node.js",
+            "briefDescription": "Adding features for remote office hours support to the 15-122 OH queue website",
             "longDescription": "This project was done in collaboration with other TAs to add features onto the current 15-122 queue, both in making some general quality-of-life improvements along with addressing some issues with remote office hours. This also had the overarching goal of getting TAs more directly involved with improving the course.",
             "links": [
                 {
                     "link": "https://github.com/angelaz1/122queue",
                     "linkPretext": "Link to repository: ",
+                    "linkText": "here",
+                    "linkPosttext": ""
+                },
+                {
+                    "link": "q.15122.tk",
+                    "linkPretext": "; Link to queue website: ",
                     "linkText": "here",
                     "linkPosttext": "."
                 }
@@ -50,6 +62,9 @@
             "date": "Fall 2020",
             "description": "Contributor to the open-source, \"free-to-win\" rhythm game osu!",
             "thumbnail": "assets/img/osu/title.png",
+            "role": "Programmer",
+            "platform": "Desktop Game made with C#",
+            "briefDescription": "Added chat-related features to the open-source, \"free-to-win\" rhythm game osu!",
             "longDescription": "As part of the open-source excursion project with 17-313, I worked with a team of 5 students to tackle various issues in the osu! repository. We mainly focused on fixing UI/UX features and bugs with the game's current chat system. After the course, I also worked with a partner to contribute to osu!'s web API.",
             "links": [
                 {

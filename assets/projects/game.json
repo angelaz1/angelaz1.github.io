@@ -5,7 +5,12 @@
             "date": "Spring 2021",
             "description": "A CMU-themed racing game",
             "thumbnail": "assets/img/buggy/title.png",
-            "longDescription": "Bigger, Badder, Buggiere was a project for the 53-472 AGS course. The game is inspird by similar cartoon-y racing games like Mario Kart, but with a CMU twist! This project involved taking the original buggy game from last year (which encountered many setbacks due to COVID), and turning it into a complete and fun experience.\n\n We worked in a large interdisciplinary team over the course of the entire semster. For this project, I worked primarily as a programmer for the CPU buggies, items, and UI.",
+            "role": "AI & UI Programmer",
+            "platform": "HTML5 Game made in Unity",
+            "devTime": "One Semester",
+            "teamSize": "19 People",
+            "briefDescription": "An intense Mario-Kart style racing game against 3 other CPUs themed around CMU's buggy-racing traditions",
+            "longDescription": "Bigger, Badder, Buggier was a project for the 53-472 AGS course. The game is inspird by similar cartoon-y racing games like Mario Kart, but with a CMU twist! This project involved taking the original buggy game from last year (which encountered many setbacks due to COVID), and turning it into a complete and fun experience.\n\n We worked in a large interdisciplinary team over the course of the entire semster. For this project, I worked primarily as a programmer for the CPU buggies, items, and UI.",
             "links": [
                 {
                     "link": "https://games.ideate.cmu.edu/biggerbadderbuggier/",
@@ -33,6 +38,11 @@
             "date": "Summer 2017",
             "description": "An HTC Vive game based on anamorphic illusions",
             "thumbnail": "assets/img/perspective/key.png",
+            "role": "Game Designer, 3D + 2D Artist",
+            "platform": "HTC Vive VR Game made in Unity",
+            "devTime": "Two Weeks",
+            "teamSize": "2 Artists + 2 Programmers + 1 Sound",
+            "briefDescription": "An intriguing VR puzzle game centered around anamorphic art and the idea of perspective",
             "longDescription": "Perspective is a VR game created for the HTC Vive that focuses on the theme of anamorphic illusions, an interesting art form where objects could be seen depending on the viewer's perspective. One mainstream example of this is OK Go's \"The Writing's On the Wall\" music video. We chose this theme for our game in order to fully utilize the HTC Vive's capabilities of capturing the player's position and orientation.\n\n This game was built with an interdisciplinary team of 5 over the course of two weeks. My main roles in this project were designing the puzzles and creating the 3D/2D art assets.",
             "links": [
                 {
@@ -60,6 +70,11 @@
             "date": "Spring 2020",
             "description": "A WebGL Olympian dating simulator game",
             "thumbnail": "assets/img/olympians/aphrodite.png",
+            "role": "Lead Programmer, UI Artist, Sound Designer, Writer",
+            "platform": "HTML5 Game made in Unity",
+            "devTime": "Three Weeks",
+            "teamSize": "2 Artists + 2 Programmers + 1 Sound",
+            "briefDescription": "A fun puzzle + dating game inspired by Olympians from Greek mythology",
             "longDescription": "The Olympians was a final project for the 53-471 GDPP course. This project involved coming up with creative game ideas related to fable, myths, or folklore, and pitching them to the course instructors, who selected the idea that we developed into a full game. This was our first time working on a dating simulator, and we learned a lot about UI design, story-telling, and time management.\n\n This game was built with an interdisciplinary team of 5 over the course of four weeks. For this project, I was the lead programmer, UI artist, and sound designer.",
             "links": [
                 {
@@ -90,6 +105,11 @@
             "date": "Spring 2020",
             "description": "A music-based puzzle platformer featuring a melodica player!",
             "thumbnail": "assets/img/keys/title.png",
+            "role": "Lead Programmer, UI Artist, Sound Designer",
+            "platform": "HTML5 Game made in Unity",
+            "devTime": "Two Weeks",
+            "teamSize": "2 Artists + 2 Programmers + 1 Sound",
+            "briefDescription": "A music-based puzzle platformer featuring a melodica player",
             "longDescription": "Keys to Happiness was a project for the 53-471 GDPP course. This project involved creating a creative platformer game with an interdisciplinary team of 5 over the course of four weeks. For this project, I worked primarily as a 2D artist (title screen, enemy characters and UI elements) and sound designer, but also helped as a backup programmer.",
             "links": [
                 {
@@ -119,6 +139,11 @@
             "date": "Spring 2020",
             "description": "A multiplayer basketball game about cheating birds",
             "thumbnail": "assets/img/fowl/title.png",
+            "role": "Gameplay + UI Programmer, UI Artist, Sound Designer",
+            "platform": "HTML5 Game made in Unity for two handheld controllers",
+            "devTime": "Two Weeks",
+            "teamSize": "1 Producer + 3 Programmers + 1 Artist",
+            "briefDescription": "A multiplayer basketball game about cheating birds",
             "longDescription": "Fowl Play was a project for the 53-471 GDPP course. This project had the theme of remaking an existing game - in this case, basketball. We created Fowl Play based on the idea of cheating birds playing 1v1's. We worked in interdisciplinary teams of 6 over the course of three weeks. For this project, I worked primarily as a 2D artist, UI programmer, and backup sound designer.",
             "links": [
                 {

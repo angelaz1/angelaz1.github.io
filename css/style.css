@@ -126,7 +126,7 @@ main {
 
     .my-description {
         margin-left: 90px;
-        margin-right: 10px;
+        margin-right: 20px;
         padding-bottom: 5px;
     }
 }
@@ -459,9 +459,9 @@ ion-icon {
 .skill-small {
     background: #102e5673;
     color: #fff;
-    padding: 10px;
+    padding: 7px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 10px;
     line-height: 300%;
     white-space: nowrap;
@@ -472,7 +472,25 @@ ion-icon {
 }
 
 .modal-body {
-    text-align: justify;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modal-dialog {
+    width: 60%;
+}
+
+.project-bullets {
+    list-style-position: inside;
+}
+
+.project-bullets ul {
+    padding-left: 15px;
+}
+
+.project-bullets ul li {
+    margin: 5px;
 }
 
 .descrip {
