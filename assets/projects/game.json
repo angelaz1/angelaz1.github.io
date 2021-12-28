@@ -1,20 +1,141 @@
 {
     "cards": [
         {
+            "title": "Marley",
+            "date": "Fall 2021",
+            "description": "A heartfelt VR game about caring for your grandma as her dog Marley",
+            "thumbnail": "assets/img/marley/cover.png",
+            "role": "Gameplay Programmer",
+            "mainRoles": [
+                {"description": "Created object pickup and placement interactions with the dog's snout to increase player's immersion"},
+                {"description": "Implemented system for fetch quests and story progression"}
+            ],
+            "platform": "Oculus Quest VR Game made in Unity",
+            "devTime": "Two Weeks",
+            "teamSize": "5 People",
+            "longDescription": "Marley is an emotional story-based game played from the perspective of a dog (Marley) taking care of their elder owner. The story explores themes about the loss of a pet and a pet's desire to take care of their owner.\n\nThe team's main goal with this game was to make the player's expreiencee as immersive as possible. To fulfill this goal, player movement and interactions with various objects in the world all emulate the motions of a dog. From a programming perspective, this involved implementing a strong gesture recognition system.",
+            "links": [
+                {
+                    "link": "https://youtu.be/3QpcCrSym_s",
+                    "linkPretext": "You can watch a video of the gameplay ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [
+                {"path": "assets/img/marley/design.png"},
+                {"path": "assets/img/marley/tutorial.png"},
+                {"path": "assets/img/marley/gameplay.png"}
+            ], 
+            "skills": [
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "Gesture Recognition", "other": true},
+                {"name": "Game Design", "other": true}
+            ]
+        },
+        {
+            "title": "Four Paws are Better Than One",
+            "date": "Fall 2021",
+            "description": "A fun collaborative game following two friends' as they search for a job",
+            "thumbnail": "assets/img/fourpaws/cover.jpg",
+            "role": "Gameplay Programmer",
+            "mainRoles": [
+                {"description": "Created all collaborative minigames and integrated each player's controls"},
+                {"description": "Implemented system to track player progress and enable story progression"},
+                {"description": "Added a leaderboard to compete with other duos' scores"}
+            ],
+            "platform": "PC Game made in Unity that uses the DDR Pad and Makey Makey as controllers",
+            "devTime": "Two Weeks",
+            "teamSize": "5 People",
+            "longDescription": "Four Paws is a light-hearted collaborative game that follows the story of two friends attempting to find a job they can do together. To prove their collaboration skills, the two go through a series of jobs demonstrating their ability to work together. The gameplay involves having one player play on a DDR mat and the other using a custom two-button controller made with the Makey Makey.\n\nThis game was made for the annual ETC Festival, intending to be a fun kid-friendly collaborative game. As such, a lot of consideration was taken to make the game appealing and easy to learn/play.",
+            "links": [
+                {
+                    "link": "https://youtu.be/wivqP1vQOKY",
+                    "linkPretext": "You can watch a video of the gameplay ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [
+                {"path": "assets/img/fourpaws/pick.png"},
+                {"path": "assets/img/fourpaws/sort.png"},
+                {"path": "assets/img/fourpaws/box.png"}
+            ], 
+            "skills": [
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "Gesture Recognition", "other": true},
+                {"name": "Game Design", "other": true}
+            ]
+        },
+        {
+            "title": "Low Bar",
+            "date": "Fall 2021",
+            "description": "An AR game about serving robotic customers in a futuristic bar",
+            "thumbnail": "assets/img/lowbar/cover.png",
+            "role": "Gameplay Programmer",
+            "mainRoles": [
+                {"description": "Created core pouring and mixing interactions for a realistic drink mixing experience"},
+                {"description": "Implemented modular classes to easily create unique orders and customers"}
+            ],
+            "platform": "Microsoft Hololens AR Game made in Unity",
+            "devTime": "Two Weeks",
+            "teamSize": "5 People",
+            "longDescription": "Low Bar is a drink-mixing game set in a futuristic bar utilizing the AR capabilities of the Microsoft Hololens. Players must fulfill orders from robotic customers and serve them the correctly mixed drink/flavoring pairing to suit their tastes.\n\nThe main objective of this game was to explore the capabilities of AR, which we did by setting up different gesture recognition systems to enable players to pour and mix drinks. We also kept extendability in mind by setting up a easily customizable system to add new customer types and preferences.",
+            "links": [
+                {
+                    "link": "https://youtu.be/mEyxCnFu-hY",
+                    "linkPretext": "You can watch a video of the gameplay ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [
+                {"path": "assets/img/lowbar/order.png"},
+                {"path": "assets/img/lowbar/pour.png"}
+            ], 
+            "skills": [
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "Gesture Recognition", "other": true},
+                {"name": "Game Design", "other": true}
+            ]
+        },
+        {
             "title": "Bigger, Badder, Buggier",
             "date": "Spring 2021",
             "description": "A CMU-themed racing game",
             "thumbnail": "assets/img/buggy/title.png",
             "role": "AI & UI Programmer",
+            "mainRoles": [
+                {"description": "Designed and implemented CPU kart logic, including NavMesh navigation and item usage to ensure competitive feel"},
+                {"description": "Created abstract classes to modularize the process of integrating new items and item interactions for both CPU and human players"},
+                {"description": "Closely collaborated with art team to integrate UI into the game"}
+            ],
             "platform": "HTML5 Game made in Unity",
             "devTime": "One Semester",
             "teamSize": "19 People",
-            "briefDescription": "An intense Mario-Kart style racing game against 3 other CPUs themed around CMU's buggy-racing traditions",
             "longDescription": "Bigger, Badder, Buggier was a project for the 53-472 AGS course. The game is inspird by similar cartoon-y racing games like Mario Kart, but with a CMU twist! This project involved taking the original buggy game from last year (which encountered many setbacks due to COVID), and turning it into a complete and fun experience.\n\n We worked in a large interdisciplinary team over the course of the entire semster. For this project, I worked primarily as a programmer for the CPU buggies, items, and UI.",
             "links": [
                 {
                     "link": "https://games.ideate.cmu.edu/biggerbadderbuggier/",
                     "linkPretext": "You can learn more about the game and play it ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                },
+                {
+                    "link": "https://courses.ideate.cmu.edu/53-472/s2021/?p=326",
+                    "linkPretext": "Read our spotlight post on CPU kart logic ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                },
+                {
+                    "link": "https://courses.ideate.cmu.edu/53-472/s2021/?p=391",
+                    "linkPretext": "Read our spotlight post on powerup items ",
                     "linkText": "here",
                     "linkPosttext": "!"
                 }
@@ -39,10 +160,14 @@
             "description": "An HTC Vive game based on anamorphic illusions",
             "thumbnail": "assets/img/perspective/key.png",
             "role": "Game Designer, 3D + 2D Artist",
+            "mainRoles": [
+                {"description": "Pitched initial idea of anamorphic puzzles to fully utilize the capabilities of the HTC Vive"},
+                {"description": "Designed and created all 3D puzzles in Maya along with 2D decorative art in museum"},
+                {"description": "Assisted programmers in using bounding box logic to determine the player's gaze and when the puzzle has been solved"}
+            ],
             "platform": "HTC Vive VR Game made in Unity",
             "devTime": "Two Weeks",
             "teamSize": "2 Artists + 2 Programmers + 1 Sound",
-            "briefDescription": "An intriguing VR puzzle game centered around anamorphic art and the idea of perspective",
             "longDescription": "Perspective is a VR game created for the HTC Vive that focuses on the theme of anamorphic illusions, an interesting art form where objects could be seen depending on the viewer's perspective. One mainstream example of this is OK Go's \"The Writing's On the Wall\" music video. We chose this theme for our game in order to fully utilize the HTC Vive's capabilities of capturing the player's position and orientation.\n\n This game was built with an interdisciplinary team of 5 over the course of two weeks. My main roles in this project were designing the puzzles and creating the 3D/2D art assets.",
             "links": [
                 {
@@ -66,15 +191,54 @@
             ]
         },
         {
+            "title": "Dream Guardian",
+            "date": "Fall 2021",
+            "description": "A VR rhythm game about defending the dreams of children",
+            "thumbnail": "assets/img/dream/cover.png",
+            "role": "Gameplay Programmer",
+            "mainRoles": [
+                {"description": "Created core pulling interaction with rope by using gesture recognition and manipulating physics systems within Unity"},
+                {"description": "Worked with artists in designing and integrating animations and UI elements"}
+            ],
+            "platform": "Oculus Quest VR Game made in Unity",
+            "devTime": "Two Weeks",
+            "teamSize": "5 People",
+            "longDescription": "Dream Guardian is a VR rhythm game where the player must defend a group of sleeping children from evil dream-eating monsters. The player's main interaction with the game is pulling a rope that triggers a hammer attack to defeat the monsters.\n\nThis game was a Round 1 game in the ETC Building Virtual Worlds class and was an exploration of how to create a VR game for the Oculus Quest. Our main goal was to get familiar with the hardware and design an easy-to-learn game for anyone to pick up and play. My main contribution was fine-tuning the core player interaction of rope-pulling to make the game feel satisfying to play.",
+            "links": [
+                {
+                    "link": "https://youtu.be/txQ0pz4dupw",
+                    "linkPretext": "You can watch a video of the gameplay ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [
+                {"path": "assets/img/dream/gameplay.png"},
+                {"path": "assets/img/dream/result.png"},
+                {"path": "assets/img/dream/credits.png"}
+            ], 
+            "skills": [
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "Physics", "other": true},
+                {"name": "UI/UX", "other": true},
+                {"name": "Game Design", "other": true}
+            ]
+        },
+        {
             "title": "The Olympians",
             "date": "Spring 2020",
             "description": "A WebGL Olympian dating simulator game",
             "thumbnail": "assets/img/olympians/aphrodite.png",
-            "role": "Lead Programmer, UI Artist, Sound Designer, Writer",
+            "role": "Lead Programmer, UI Artist, Sound Designer",
+            "mainRoles": [
+                {"description": "Implemented dialogue tree logic for each character, along with classes to store player progress with each character"},
+                {"description": "Created and integrated all main UI assets, logic, and animations"}
+            ],
             "platform": "HTML5 Game made in Unity",
             "devTime": "Three Weeks",
             "teamSize": "2 Artists + 2 Programmers + 1 Sound",
-            "briefDescription": "A fun puzzle + dating game inspired by Olympians from Greek mythology",
             "longDescription": "The Olympians was a final project for the 53-471 GDPP course. This project involved coming up with creative game ideas related to fable, myths, or folklore, and pitching them to the course instructors, who selected the idea that we developed into a full game. This was our first time working on a dating simulator, and we learned a lot about UI design, story-telling, and time management.\n\n This game was built with an interdisciplinary team of 5 over the course of four weeks. For this project, I was the lead programmer, UI artist, and sound designer.",
             "links": [
                 {
@@ -105,12 +269,15 @@
             "date": "Spring 2020",
             "description": "A music-based puzzle platformer featuring a melodica player!",
             "thumbnail": "assets/img/keys/title.png",
-            "role": "Lead Programmer, UI Artist, Sound Designer",
+            "role": "2D Artist, Sound Designer, Programmer",
+            "mainRoles": [
+                {"description": "Created and implemented art assets for title screen, enemy characters, and key UI elements"},
+                {"description": "Assisted programmers with bug-fixing puzzle logic and implementing certain enemy interactions"}
+            ],
             "platform": "HTML5 Game made in Unity",
             "devTime": "Two Weeks",
             "teamSize": "2 Artists + 2 Programmers + 1 Sound",
-            "briefDescription": "A music-based puzzle platformer featuring a melodica player",
-            "longDescription": "Keys to Happiness was a project for the 53-471 GDPP course. This project involved creating a creative platformer game with an interdisciplinary team of 5 over the course of four weeks. For this project, I worked primarily as a 2D artist (title screen, enemy characters and UI elements) and sound designer, but also helped as a backup programmer.",
+            "longDescription": "Keys to Happiness was a project for the 53-471 GDPP course. This project involved creating a creative platformer game with an interdisciplinary team of 5 over the course of four weeks. Our game follows a melodica player protagonist who is mocked for not playing a 'real instrument'. The story follows our protagonist as they travere a dream-esque world, where they must solve music-based puzzles and fight their inner demons.\n\nFor this project, I worked primarily as a 2D artist and sound designer, but also helped as a backup programmer.",
             "links": [
                 {
                     "link": "https://moontwist11.itch.io/keys-to-happiness",
@@ -140,11 +307,16 @@
             "description": "A multiplayer basketball game about cheating birds",
             "thumbnail": "assets/img/fowl/title.png",
             "role": "Gameplay + UI Programmer, UI Artist, Sound Designer",
+            "mainRoles": [
+                {"description": "Created and implemented UI and environmental art assets"},
+                {"description": "Integrated character animations into the game"},
+                {"description": "Created BGM and SFX for title screen"}
+            ],
             "platform": "HTML5 Game made in Unity for two handheld controllers",
             "devTime": "Three Weeks",
             "teamSize": "1 Producer + 3 Programmers + 2 Artists",
             "briefDescription": "A multiplayer basketball game about cheating birds",
-            "longDescription": "Fowl Play was a project for the 53-471 GDPP course. This project had the theme of remaking an existing game - in this case, basketball. We created Fowl Play based on the idea of cheating birds playing 1v1's. We worked in interdisciplinary teams of 6 over the course of three weeks. For this project, I worked primarily as a 2D artist, UI programmer, and backup sound designer.",
+            "longDescription": "Fowl Play was a project for the 53-471 GDPP course. This project had the theme of remaking an existing game - in this case, basketball. The idea of Fowl Play came from wordplay on 'Foul Play' and is based on the idea of cheating birds playing 1v1's.\n\n We worked in interdisciplinary teams of 6 over the course of three weeks. For this project, I worked primarily as a 2D artist, UI programmer, and backup sound designer.",
             "links": [
                 {
                     "link": "https://moontwist11.itch.io/fowl-play",

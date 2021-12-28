@@ -72,7 +72,7 @@
                     
                     <!-- Software Projects -->
                     <div class="card collapse-card">
-                        <div class="card-header collapse-card-header fade-in" id="projects-software" style="transform: rotate(0);">
+                        <div class="card-header collapse-card-header" id="projects-software" style="transform: rotate(0);">
                             <h4>
                                 <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#softwareProjects">
                                     Software Projects
@@ -87,7 +87,7 @@
 
                     <!-- Class Projects -->
                     <div class="card collapse-card">
-                        <div class="card-header collapse-card-header fade-in" id="projects-class" style="transform: rotate(0);">
+                        <div class="card-header collapse-card-header" id="projects-class" style="transform: rotate(0);">
                             <h4>
                                 <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#classProjects">
                                     Class Projects
@@ -101,7 +101,7 @@
                     
                     <!-- Other Projects -->
                     <div class="card collapse-card">
-                        <div class="card-header collapse-card-header fade-in" id="projects-misc" style="transform: rotate(0);">
+                        <div class="card-header collapse-card-header" id="projects-misc" style="transform: rotate(0);">
                             <h4>
                                 <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#otherProjects">
                                     Other Projects
@@ -157,7 +157,7 @@
             </div>
             
             <div class="modal fade" id="{{cleanedTitle}}Modal" tabindex="-1" role="dialog" aria-labelledby="{{cleanedTitle}}Modal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered  mw-100" role="document">
+                <div class="modal-dialog modal-dialog-centered mw-100" role="document">
                     <div class="modal-content">
                         <div class="modal-header px-4">
                             <h5 class="modal-title" id="{{cleanedTitle}}ModalLabel">{{title}}</h5>
@@ -171,10 +171,10 @@
                                     <div class="row project-bullets pr-2">
                                         <ul>
                                             {{#role}}<li><b>Role:</b> {{role}}</li>{{/role}}
+                                            <ul>{{#mainRoles}}<li>{{description}}</li>{{/mainRoles}}</ul>
                                             {{#platform}}<li><b>Platform:</b> {{platform}}</li>{{/platform}}
                                             {{#devTime}}<li><b>Development Time:</b> {{devTime}}</li>{{/devTime}}
                                             {{#teamSize}}<li><b>Team Size:</b> {{teamSize}}</li>{{/teamSize}}
-                                            {{#briefDescription}}<li><b>Description:</b> {{briefDescription}}</li>{{/briefDescription}}
                                         </ul>
                                     </div>
                                     <div class="row pb-2 justify-content-center">
@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="col-12 col-lg-6 pb-1">
                                     <div id="{{cleanedTitle}}CarouselControls" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
+                                        <div class="carousel-inner project-carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="img-fluid" src="{{thumbnail}}" alt="Thumbnail">
                                             </div>
@@ -213,13 +213,16 @@
 
                             <hr>
 
-                            <div class="row px-3 py-2">
+                            <div class="row px-3 py-0">
                                 <p class="descrip">{{longDescription}}</p>
-                                <div class="py-2"></div>
-                                {{#links}}
-                                    <p class="mb-0">{{linkPretext}}<a href="{{link}}" target="_blank" rel="noopener noreferrer">{{linkText}}</a>{{linkPosttext}}</p>
-                                {{/links}}
                             </div>
+                            <hr>
+                            {{#links}}
+                            <div class="row px-3 py-1">
+                                <p class="mb-0">{{linkPretext}}<a href="{{link}}" target="_blank" rel="noopener noreferrer">{{linkText}}</a>{{linkPosttext}}</p>
+                            </div>
+                            {{/links}}
+                            <div class="py-1"></div>
                         </div>
                     </div>
                 </div>

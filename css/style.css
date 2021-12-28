@@ -477,8 +477,23 @@ ion-icon {
     padding-right: 20px;
 }
 
-.modal-dialog {
-    width: 60%;
+@media (max-width: 576px) {
+    .modal-dialog {
+        width: 95%;
+        margin: 1.75rem auto;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        width: 80%;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-carousel-inner {
+        max-height: 290px !important;
+    }
 }
 
 .project-bullets {
