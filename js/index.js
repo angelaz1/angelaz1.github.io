@@ -96,6 +96,64 @@ function fadeInStaggered() {
   });
 }
 
+/** Image Grid Functions */
+
+/** 
+ * List of project images to use
+ */
+images = 
+  ["assets/img/marley/cover.png", 
+   "assets/img/fourpaws/cover.jpg", 
+   "assets/img/lowbar/cover.png",
+   "assets/img/buggy/title.png",
+   "assets/img/perspective/key.png",
+   "assets/img/dream/cover.png",
+   "assets/img/olympians/aphrodite.png",
+   "assets/img/keys/title.png",
+   "assets/img/fowl/title.png",
+   "assets/img/vscode-extension/extension-page.png",
+   "assets/img/queue/queue.png",
+   "assets/img/osu/title.png",
+   "assets/img/shabu/forest.png",
+   "assets/img/meme/phantom.png",
+   "assets/img/class/os.png"
+  ]
+
+preload($( ".bg-grid-row div" ));
+
+setInterval(function(){
+  swapPic($( ".bg-grid-row div" ));
+}, 3000);
+
+/**
+ * Preloads images into the intro background grid 
+ * @param {object} gridParents 
+ */
+function preload(gridParents) {
+  for (let index = 0; index < gridParents.length; index++) {
+    const currentDiv = gridParents.eq(index);
+    var random_pic = images[ Math.floor((Math.random()*images.length)) ]; 
+    currentDiv.css({'background-image':'url(\''+random_pic+'\')'})
+  }
+}
+
+/**
+ * Swaps a random image in the grid into a new one
+ * @param {object} gridParents 
+ */
+function swapPic(gridParents) {
+  var length_of_list = gridParents.length;
+  var random_div = Math.floor( (Math.random()*length_of_list) );
+  var random_pic = images[ Math.floor((Math.random()*images.length)) ];
+  gridParents.eq(random_div)[0].style.opacity = 0;
+
+  // wait
+  setTimeout(() => { 
+    gridParents.eq(random_div).css({'background-image':'url(\''+random_pic+'\')'}); 
+    gridParents.eq(random_div)[0].style.opacity = 1;
+   }, 1000);
+}
+
 /** Misc. Functions */
 
 /** 
