@@ -1,6 +1,36 @@
 {
     "cards": [
         {
+            "title": "Re:Divider",
+            "date": "Spring 2022",
+            "description": "A puzzle game made for GGJ 2022",
+            "thumbnail": "assets/img/redivider/cover.png",
+            "role": "Gameplay Programmer",
+            "mainRoles": [
+                {"description": "Implemented main player movement and game manager systems, including storing a level's state, manipulating time, verifying completion"},
+                {"description": "Assisted artists in asset animation, UI setup and cloud shaders"}
+            ],
+            "platform": "Web-based Puzzle Game made in Unity",
+            "devTime": "One Weekend",
+            "teamSize": "7 People",
+            "longDescription": "Re:Divider is a multiplayer puzzle game about two characters who are trapped in parallel worlds - one where time flow is reversed! Help our two characters meet by manipulating their worlds to the exact same state and bring their worlds together.",
+            "links": [
+                {
+                    "link": "https://moontwist11.itch.io/redivider",
+                    "linkPretext": "You can play the game ",
+                    "linkText": "here",
+                    "linkPosttext": "!"
+                }
+            ],
+            "images": [], 
+            "skills": [
+                {"name": "C#", "language": true},
+                {"name": "Unity", "software": true},
+                {"name": "Programming", "other": true},
+                {"name": "Game Design", "other": true}
+            ]
+        },
+        {
             "title": "Marley",
             "date": "Fall 2021",
             "description": "A heartfelt VR game about caring for your grandma as her dog Marley",
