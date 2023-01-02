@@ -1,6 +1,30 @@
 {
     "cards": [
         {
+            "title": "Fall 2022 Courses",
+            "subdescription": "Second-Year Graduate",
+            "shortName": "F22",
+            "classes": {
+                "main": [
+                    {"number": "15-666", "name": "Computer Game Programming"},
+                    {"number": "ETC Project", "name": "HAI x CMU Psychology"}
+                ],
+                "other": []
+            },
+            "current": true
+        },
+        {
+            "title": "EA Summer Intern",
+            "shortName": "MaxisS22",
+            "subdescription": "Maxis Team",
+            "dates": "Jun 2022 - Aug 2022",
+            "expDescriptions": [
+                {"description": "Led the development of a data-driven Unity-based prototype in C# for a new gameplay mechanic to answer crucial LOD design questions"},
+                {"description": "Designed key algorithms working extensively with AI NavMesh-based pathfinding and procedural generation"}
+            ],
+            "current": true
+        },
+        {
             "title": "Spring 2022 Courses",
             "subdescription": "Fourth-Year Undergraduate",
             "shortName": "S22",
@@ -8,11 +32,11 @@
                 "main": [
                     {"number": "15-426", "name": "Computer Graphics"},
                     {"number": "17-413", "name": "Software Engineering Practicum"},
-                    {"number": "17-437", "name": "Web Application Development"}
+                    {"number": "10-310", "name": "Introduction to Machine Learning"},
+                    {"number": "05-418", "name": "Design Educational Games"}
                 ],
                 "other": [
-                    {"number": "05-418", "name": "Design Educational Games"},
-                    {"number": "xx-xxx", "name": "Undecided"}
+                    {"number": "17-437", "name": "Web Application Development"}
                 ]
             },
             "current": true
@@ -31,7 +55,7 @@
                     {"number": "53-700", "name": "ETC Fundamentals"}
                 ]
             },
-            "current": true
+            "current": false
         },
         {
             "title": "Microsoft SWE Summer Intern",
@@ -42,7 +66,7 @@
                 {"description": "Designed and implemented an IP Geolocation Kubernetes service for the PlayFab Login API along with an automated database updater Github Action"},
                 {"description": "Worked extensively with Kubernetes, Terraform, FluxCD and Azure Resources to integrate service into existing clusters and create a shareable package for the Azure team"}
             ],
-            "current": true
+            "current": false
         },
         {
             "title": "Spring 2021 Courses",
@@ -87,7 +111,7 @@
                 {"description": "Worked directly with PlayFab, a open-source backend service for game developers hosting 2.5 billion player accounts for over 5000 games"},
                 {"description": "Designed and implemented a data migration metadata class to assist with PlayFab's large-scale data migration"}
             ],
-            "current": true
+            "current": false
         },
         {
             "title": "15-122 Lead Teaching Assistant",
