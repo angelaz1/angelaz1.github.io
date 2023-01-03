@@ -17,7 +17,7 @@
 
         <!-- Keywords in the website -->
         <meta name="keywords" content="Software Developer, Software Engineer, 
-        Computer Science, Carnegie Mellon University, CMU, Game Design">
+        Computer Science, Carnegie Mellon University, CMU, Game Design, Gameplay Programmer">
 
         <!-- Website description -->
         <meta name="description" content="Personal website for Angela Zhang - CS Major at CMU, Class of 2022">
@@ -32,11 +32,11 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
         <!-- Stylesheets -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- Website Icon -->
-        <link rel="icon" href="assets/img/az.png">    
+        <link rel="icon" href="favicon.ico">    
         <link rel="image_src" href="assets/img/background.png">
     </head>
 
@@ -60,12 +60,12 @@
                     <div class="card collapse-card">
                         <div class="card-header collapse-card-header fade-in" id="projects-game" style="transform: rotate(0);">
                             <h4>
-                                <a href="#" class="stretched-link collapse-link" data-toggle="collapse" data-target="#gameProjects">
+                                <a href="#" class="stretched-link collapse-link" data-bs-toggle="collapse" data-bs-target="#gameProjects">
                                     Game Projects
                                 </a>
                             </h4>
                         </div>
-                        <div id="gameProjects" class="collapse project show" aria-labelledby="gameProjects" data-parent="#project-accordion">
+                        <div id="gameProjects" class="collapse project show" aria-labelledby="gameProjects" data-bs-parent="#project-accordion">
                             <div id="game-projects"></div>
                         </div>
                     </div>
@@ -74,12 +74,12 @@
                     <div class="card collapse-card">
                         <div class="card-header collapse-card-header" id="projects-software" style="transform: rotate(0);">
                             <h4>
-                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#softwareProjects">
+                                <a href="#" class="stretched-link collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#softwareProjects">
                                     Software Projects
                                 </a>
                             </h4>
                         </div>
-                        <div id="softwareProjects" class="collapse project" aria-labelledby="softwareProjects" data-parent="#project-accordion">
+                        <div id="softwareProjects" class="collapse project" aria-labelledby="softwareProjects" data-bs-parent="#project-accordion">
                             <div id="software-projects"></div>
                         </div>
                     </div>
@@ -89,12 +89,12 @@
                     <div class="card collapse-card">
                         <div class="card-header collapse-card-header" id="projects-class" style="transform: rotate(0);">
                             <h4>
-                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#classProjects">
+                                <a href="#" class="stretched-link collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#classProjects">
                                     Class Projects
                                 </a>
                             </h4>
                         </div>
-                        <div id="classProjects" class="collapse project" aria-labelledby="classProjects" data-parent="#project-accordion">
+                        <div id="classProjects" class="collapse project" aria-labelledby="classProjects" data-bs-parent="#project-accordion">
                             <div id="class-projects"></div>
                         </div>
                     </div>
@@ -103,12 +103,12 @@
                     <div class="card collapse-card">
                         <div class="card-header collapse-card-header" id="projects-misc" style="transform: rotate(0);">
                             <h4>
-                                <a href="#" class="stretched-link collapse-link collapsed" data-toggle="collapse" data-target="#otherProjects">
+                                <a href="#" class="stretched-link collapse-link collapsed" data-bs-toggle="collapse" data-bs-target="#otherProjects">
                                     Other Projects
                                 </a>
                             </h4>
                         </div>
-                        <div id="otherProjects" class="collapse project" aria-labelledby="otherProjects" data-parent="#project-accordion">
+                        <div id="otherProjects" class="collapse project" aria-labelledby="otherProjects" data-bs-parent="#project-accordion">
                             <div id="other-projects"></div>
                         </div>
                     </div>
@@ -125,10 +125,10 @@
          <!-- Javascript -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
-        <script type="module"  src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script> 
-        <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="js/index.js"></script>
         <script src="js/projects.js"></script>
 
@@ -142,28 +142,33 @@
             <div class="row justify-content-center mb-2 project-grid">
             {{#cards}}
             <div class="col-auto mb-3">
-            <div class="card d-flex h-100 {{#longDescription}}project-card{{/longDescription}}" style="max-width: 22rem;">
-                <div class="card-body">
-                    <h4 class="card-title">{{title}}</h4>
-                    <h5>{{date}}</h5>
-                    <p class="descrip">{{description}}</p>
-                    {{#longDescription}}
-                    <a href="#" class="stretched-link" data-toggle="modal" data-target="#{{cleanedTitle}}Modal"></a>
-                    {{/longDescription}}
+                <div class="card d-flex h-100 project-card {{#longDescription}}project-anim{{/longDescription}}" style="max-width: 22rem;">
                     {{#thumbnail}}
-                    <img class="card-img-bottom" src="{{thumbnail}}" alt="{{title}} Thumbnail">
+                    <img src="{{thumbnail}}" alt="{{title}} Thumbnail">
                     {{/thumbnail}}
+                    <div class="card-body">
+                        <h4 class="card-title">{{title}}</h4>
+                        <h5>{{date}}</h5>
+                        <p class="descrip">{{description}}</p>
+                        {{#longDescription}}
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#{{cleanedTitle}}Modal"></a>
+                        {{/longDescription}}
+                    </div>
+                    <div class="card-footer">
+                        <div class="skills">
+                            {{#skills}}
+                                <span class="skill-small {{#language}}coding{{/language}} {{#software}}software{{/software}} {{#other}}soft{{/other}}">{{name}}</span>
+                            {{/skills}}
+                        </div>
+                    </div>
                 </div>
-            </div>
             
             <div class="modal fade" id="{{cleanedTitle}}Modal" tabindex="-1" role="dialog" aria-labelledby="{{cleanedTitle}}Modal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered mw-100" role="document">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content">
                         <div class="modal-header px-4">
                             <h5 class="modal-title" id="{{cleanedTitle}}ModalLabel">{{title}}</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body px-4">
                             <div class="row pb-3 align-items-center">
@@ -186,7 +191,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 pb-1">
-                                    <div id="{{cleanedTitle}}CarouselControls" class="carousel slide" data-ride="carousel">
+                                    <div id="{{cleanedTitle}}CarouselControls" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner project-carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="img-fluid" src="{{thumbnail}}" alt="Thumbnail">
@@ -198,13 +203,13 @@
                                             {{/images}}
                                         </div>
                                         {{#images}}
-                                            <a class="carousel-control-prev" href="#{{cleanedTitle}}CarouselControls" role="button" data-slide="prev">
+                                            <a class="carousel-control-prev" href="#{{cleanedTitle}}CarouselControls" role="button" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
+                                                <span class="visually-hidden">Previous</span>
                                             </a>
-                                            <a class="carousel-control-next" href="#{{cleanedTitle}}CarouselControls" role="button" data-slide="next">
+                                            <a class="carousel-control-next" href="#{{cleanedTitle}}CarouselControls" role="button" data-bs-slide="next">
                                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
+                                                <span class="visually-hidden">Next</span>
                                             </a>
                                         {{/images}}
                                     </div>

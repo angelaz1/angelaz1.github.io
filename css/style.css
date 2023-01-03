@@ -1,5 +1,5 @@
 * {
-    font-family: 'Raleway', monospace !important;
+    font-family: 'Raleway' !important;
 }
 
 html {
@@ -21,7 +21,7 @@ html, body {
 }
 
 main {
-    background: rgb(255, 255, 255);
+    background: var(--bs-body-bg);
 }
 
 @media (max-width: 992px) {
@@ -109,7 +109,7 @@ main {
 }
 @media (min-width: 574px) {
     .profile {
-        border: 5px solid rgb(255, 255, 255);
+        border: 5px solid var(--bs-body-bg);;
         width: 200px;
         position: absolute;
         left: 0; top: 0;
@@ -212,54 +212,6 @@ ion-icon {
     color: #1e7555; 
 }
 
-@media (max-width: 992px) {
-    .bio-circles {
-        visibility: hidden;
-    }
-}
-@media (min-width: 992px) {
-    .bio-circles {
-        visibility: visible;
-    }
-}
-
-.bio-circles div {
-    position: absolute;
-    border-radius: 50%;
-    border: 5px solid #ddd;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-}
-
-.bio-circles #cmu-logo {
-    width: 170px; height: 170px;
-    top: 0%; left: 40%;
-    background-image: url('../assets/img/bio/cmu.png');
-    background-size: 160px 160px;
-}
-
-.bio-circles #scs-logo {
-    width: 130px; height: 130px;
-    top: 30%; left: 75%;
-    background-image: url('../assets/img/bio/scs.gif');
-    background-size: 100px 100px;
-}
-
-.bio-circles #honk-photo {
-    width: 140px; height: 140px;
-    top: 50%; left: 25%;
-    background-image: url('../assets/img/bio/honk.jpg');
-    background-size: 130px 130px;
-}
-
-.bio-circles #ta-logo {
-    width: 180px; height: 180px;
-    top: 80%; left: 60%;
-    background-image: url("../assets/img/bio/@.png");
-    background-size: 170px 170px;
-}
-
 /* Skills */
 
 .skill-key {
@@ -273,12 +225,8 @@ ion-icon {
     white-space: nowrap;
 }
 
-.skill-key-wrapper {
-    transition: transform 250ms;
-}
-
-.skill-key-wrapper:hover {
-    transform: translateY(-10px);
+a.skill-key-wrapper {
+    text-decoration: none;
 }
 
 .skill-keys .coding, .skills .coding {
@@ -351,11 +299,6 @@ ion-icon {
     padding: 0px;
     vertical-align: middle;
     float: right;
-}
-
-.playing-button {
-    background-color: rgb(155, 189, 171);
-    color: rgb(255, 255, 255);
 }
 
 /* Projects */
@@ -436,24 +379,42 @@ ion-icon {
 }
 
 .project-card {
-    border-radius: 4px;
     border-width: 2px;
-    border-color: #aed4be;
-    background: #fff;
-    box-shadow: 0 6px 10px #9cc8a44b, 0 0 6px #9cc8a43e;
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    padding: 10px;
+    background: var(--bs-body-bg);
     margin-top: 10px;
+}
+
+.project-anim {
+    box-shadow: 0 6px 10px #9cc8a44b, 0 0 6px #9cc8a43e;
+    border-color: #aed4be;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     cursor: pointer;
 }
 
-.project-card:hover {
+.project-anim:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.card-img-bottom {
+.project-card img {
+    border-radius: 4px 4px 0px 0px;
     object-fit: cover;
+    height: 200px;
+}
+
+.project-card .card-body {
+    padding-bottom: 0px;
+}
+
+.project-card .card-footer {
+    border: none;
+    padding: 0px 10px 10px 10px;
+    background-color: var(--bs-body-bg);
+}
+
+.project-card .card-footer .skills {
+    text-align: right;
+    padding-top: 0px;
 }
 
 .skill-small {
@@ -555,6 +516,7 @@ ion-icon {
 
 .up-icon {
     color: #fff;
+    margin-bottom: 3px;
 }
 
 .show-anim {

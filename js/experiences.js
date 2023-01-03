@@ -31,7 +31,6 @@ parseExperiences("./assets/experiences/experiences.json", "experiences");
  */
 const scrollFunc = () => {
   let upButton = document.getElementById('up-button');
-  console.log(upButton)
   let y = window.scrollY;
   
   if (y > 200) {
