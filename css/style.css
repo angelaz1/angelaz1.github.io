@@ -208,8 +208,8 @@ ion-icon {
     background: #fff;
 }
 
-.bio-text p b {
-    color: #1e7555; 
+.bio-text p b, .bio-text p a {
+    color: #1e7555;
 }
 
 /* Skills */
